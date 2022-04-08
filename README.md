@@ -11,5 +11,8 @@ Create a working tourism website
 - ~~Create repo~~
 - ~~Create templatefiles and boilerplate~~
 - Create HTML content
+    - ~~index.html~~
+    - getting_here.html
+    - contact.html
 - Style HTML content
 - Test site at different resolutions and on different devices
