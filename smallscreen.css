@@ -5,29 +5,29 @@
 }
 
 body {
-  background-color: #516673;
   display: flex;
   justify-content: center;
+  background-color: #516673;
 }
 
 .page-content-grid {
-border-radius: 30px;
- background-color: #73482f;
-  margin-top: 20px;
   display: grid;
+  grid-template-columns: auto 10%;
   margin-left: 10%;
   margin-right: 10%;
-  grid-template-columns: auto auto;
-  flex-wrap: wrap;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #73482f;
 }
 
 .banner {
-  width: 100%;
   display: grid;
-  grid-column: 1 / span 2;
   position: relative;
+  grid-column: 1 / span 2;
+  width: 100%;
 }
+
 #hero-img {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -35,94 +35,74 @@ border-radius: 30px;
 }
 
 .page-title-tageline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   font-family: "Grape Nuts";
   color: #f2ec94;
   background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
-h1 {
+.page-title-tageline h1 {
   margin-left: 40px;
-  font-size: 48px;
+  font-size: calc(100vw*.05);
 }
-h2 {
+.page-title-tageline h2 {
   margin-left: 80px;
-  font-size: 36px;
+  font-size: calc(100vw*.02);
   margin-bottom: 15px;
 }
 
-
 .navigation-bar {
-  grid-column: 1 / span 2;
-  align-content: center;
-  height: 36px;
-  font-size: 24px;
-  background: #73482f;
-  width: 100%;
   display: grid;
+  align-content: center;
+  grid-column: 1 / span 2;
+  height: 36px;
+  width: 100%;
+  background: #73482f;
 }
 
-ul {
-  font-family: "Grape Nuts";
+.navigation-bar ul {
   display: flex;
   justify-content: space-around;
+  font-size: 30px;
   list-style: none;
+  font-family: "Grape Nuts";
 }
-a {
+.navigation-bar a {
   text-decoration: none;
   color: #f2c063;
 }
-a:hover {
+.navigation-bar a:hover {
   color: white;
 }
 
 aside {
-  padding:15px;
-  font-family: "Grape Nuts";
-   color: #f2c063;
-  align-content: flex-start;
-  min-width: 200px;
   display: grid;
   background: #73482f;
 }
-aside h3 {
-  margin-left:10px ;
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-.services{
-  margin-left:30px;
-}
-
-aside a {
-  /* padding: 5px; */
-}
 
 article {
-  
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  display: grid;
   text-align: justify;
   padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #f2f2f2;
-  display: grid;
 }
 
 footer {
   display: flex;
+  grid-column: 1 / span 2;
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-column: 1 / span 2;
   color: #f2c063;
   background-color: #73482f;
   height: 80px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-
 }
 
 .float-right {
