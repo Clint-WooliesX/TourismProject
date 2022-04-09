@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+  background-color: #516673;
+  display: flex;
+  justify-content: center;
+}
+
+.page-content-grid {
+border-radius: 30px;
+ background-color: #73482f;
+  margin-top: 20px;
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-template-columns: auto auto;
+  flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.banner {
+  width: 100%;
+  display: grid;
+  grid-column: 1 / span 2;
+  position: relative;
+}
+#hero-img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+}
+
+.page-title-tageline {
+  width: 100%;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  margin-left: 40px;
+  font-size: 48px;
+}
+h2 {
+  margin-left: 80px;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+
+.navigation-bar {
+  grid-column: 1 / span 2;
+  align-content: center;
+  height: 36px;
+  font-size: 24px;
+  background: #73482f;
+  width: 100%;
+  display: grid;
+}
+
+ul {
+  font-family: "Grape Nuts";
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #f2c063;
+}
+a:hover {
+  color: white;
+}
+
+aside {
+  padding:15px;
+  font-family: "Grape Nuts";
+   color: #f2c063;
+  align-content: flex-start;
+  min-width: 200px;
+  display: grid;
+  background: #73482f;
+}
+aside h3 {
+  margin-left:10px ;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.services{
+  margin-left:30px;
+}
+
+aside a {
+  /* padding: 5px; */
+}
+
+article {
+  
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: justify;
+  padding: 20px;
+  background-color: #f2f2f2;
+  display: grid;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1 / span 2;
+  color: #f2c063;
+  background-color: #73482f;
+  height: 80px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.float-right {
+  border: 3px solid #73482f;
+  border-radius: 10px;
+  margin: 5px;
+  float: right;
+  width: 320px;
+}
+
+.float-left {
+  border: 3px solid #73482f;
+  border-radius: 10px;
+  margin: 5px;
+  float: left;
+  width: 320px;
+}
