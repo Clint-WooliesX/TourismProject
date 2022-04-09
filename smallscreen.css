@@ -7,7 +7,7 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #ea1761;
+  background-color: #516673;
 }
 
 .page-content-grid {
@@ -37,10 +37,11 @@ body {
 }
 
 .page-title-tageline h1 {
-  margin-left: 40px;
-  font-size: calc(100vw * 0.06);
+  margin-left: 10px;
+  font-size: calc(100vw * 0.1);
 }
 .page-title-tageline h2 {
+  display:none;
   margin-left: 80px;
   font-size: calc(100vw * 0.04);
   margin-bottom: 15px;
@@ -49,19 +50,22 @@ body {
 .burger-box{
   display:grid;
   position:relative;
+  justify-content: center;
+  align-content: center;
   height:40px;
   width: 100%;
+  font-family: "Grape Nuts";
+  color:#f2c063;
 background-color: #73482f;
 }
 .hamburger {
   content: "";
   position: absolute;
-  right: calc(100vw/2);
+  left: 15px;
   width: 22px;
   height: 0;
   box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
 }
-
 
 .navigation-bar {
   display: grid;
@@ -85,9 +89,9 @@ background-color: #73482f;
   text-decoration: none;
   color: #f2c063;
 }
-/* .navigation-bar a:hover {
+.navigation-bar a:hover {
   color: white;
-} */
+}
 
 aside {
   display: none; /*grid*/

@@ -53,7 +53,9 @@ body {
   font-size: calc(100vw*.02);
   margin-bottom: 15px;
 }
-
+.burger-box{
+  display:none;
+}
 .navigation-bar {
   display: grid;
   align-content: center;
@@ -84,6 +86,7 @@ aside {
 }
 
 article {
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   text-align: justify;
   padding: 20px;
