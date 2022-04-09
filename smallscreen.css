@@ -41,22 +41,23 @@ body {
   font-size: calc(100vw * 0.1);
 }
 .page-title-tageline h2 {
-  display:none;
+  display: none;
   margin-left: 80px;
   font-size: calc(100vw * 0.04);
   margin-bottom: 15px;
 }
 
-.burger-box{
-  display:grid;
-  position:relative;
+.burger-box {
+  cursor: pointer;
+  display: grid;
+  position: relative;
   justify-content: center;
   align-content: center;
-  height:40px;
+  height: 40px;
   width: 100%;
   font-family: "Grape Nuts";
-  color:#f2c063;
-background-color: #73482f;
+  color: #f2c063;
+  background-color: #73482f;
 }
 .hamburger {
   content: "";
@@ -71,10 +72,11 @@ background-color: #73482f;
   display: grid;
   text-align: center;
   align-content: space-between;
+  overflow: hidden;
   height: 0px;
   width: 100%;
   background: #73482f;
-    transition: all 1s;
+  transition: all 0.25s;
 }
 
 .navigation-bar ul {
@@ -99,6 +101,7 @@ aside {
 }
 
 article {
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   text-align: justify;
   padding: 20px;

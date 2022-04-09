@@ -1,0 +1,25 @@
+
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.map-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.trans-options{
+    display: grid;
+    align-content: flex-start;
+}
+
+.map-frame {
+    display:grid;
+  padding-bottom: 80%;
+  height: 0;
+  width: 80%;
+  border-radius: 30px;
+border: 3px solid #73482f;
+}
