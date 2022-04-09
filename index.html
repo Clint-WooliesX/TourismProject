@@ -12,23 +12,37 @@
       rel="stylesheet"
     />
     <!-- google font -->
-    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 900px)"
+      href="widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="smallscreen.css"
+    />
+<script src="/index.js"></script>
     <title>Visit Wisemans Ferry</title>
   </head>
   <body>
     <main class="page-content-grid">
       <header class="banner">
         <img id="hero-img" src="/images/banner.jpg" alt="" />
-
+        
         <heading class="page-title-tageline">
           <h1>Wisemans Ferry</h1>
           <h2>"Come visit the Hawkesbury"</h2>
         </heading>
       </header>
-
-      <nav class="navigation-bar">
+      
+      
+      <div class="burger-box" onclick="openNav()">
+        <div class="hamburger"></div>
+      </div>
+      
+      
+      <nav id="navigation-bar" class="navigation-bar">
         <ul>
           <li><a href="#">Overview</a></li>
           <li><a href="#">Getting here</a></li>
@@ -36,7 +50,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-
+      
       <article>
         <h3>Overview</h3>
         <div>

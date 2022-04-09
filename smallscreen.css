@@ -7,79 +7,90 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #516673;
+  background-color: #ea1761;
 }
 
 .page-content-grid {
   display: grid;
-  grid-template-columns: auto 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 30px;
+  grid-template-columns: auto;
   background-color: #73482f;
 }
 
 .banner {
   display: grid;
   position: relative;
-  grid-column: 1 / span 2;
   width: 100%;
 }
 
 #hero-img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   width: 100%;
 }
 
 .page-title-tageline {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   font-family: "Grape Nuts";
   color: #f2ec94;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .page-title-tageline h1 {
   margin-left: 40px;
-  font-size: calc(100vw*.05);
+  font-size: calc(100vw * 0.06);
 }
 .page-title-tageline h2 {
   margin-left: 80px;
-  font-size: calc(100vw*.02);
+  font-size: calc(100vw * 0.04);
   margin-bottom: 15px;
 }
 
+.burger-box{
+  display:grid;
+  position:relative;
+  height:40px;
+  width: 100%;
+background-color: #73482f;
+}
+.hamburger {
+  content: "";
+  position: absolute;
+  right: calc(100vw/2);
+  width: 22px;
+  height: 0;
+  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
+}
+
+
 .navigation-bar {
   display: grid;
-  align-content: center;
-  grid-column: 1 / span 2;
-  height: 36px;
+  text-align: center;
+  align-content: space-between;
+  height: 0px;
   width: 100%;
   background: #73482f;
+    transition: all 1s;
 }
 
 .navigation-bar ul {
-  display: flex;
+  display: grid; /*flex*/
   justify-content: space-around;
-  font-size: 30px;
   list-style: none;
   font-family: "Grape Nuts";
 }
+
 .navigation-bar a {
+  font-size: 48px;
   text-decoration: none;
   color: #f2c063;
 }
-.navigation-bar a:hover {
+/* .navigation-bar a:hover {
   color: white;
-}
+} */
 
 aside {
-  display: grid;
+  display: none; /*grid*/
   background: #73482f;
 }
 
@@ -87,14 +98,11 @@ article {
   display: grid;
   text-align: justify;
   padding: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   background-color: #f2f2f2;
 }
 
 footer {
   display: flex;
-  grid-column: 1 / span 2;
   justify-content: center;
   align-items: center;
   text-align: center;
