@@ -16,3 +16,6 @@ Create a working tourism website
     - contact.html
 - Style HTML content
 - Test site at different resolutions and on different devices
+- **TIDY CSS**
+- **review all class ID names**
+- **refine and optimise code**
