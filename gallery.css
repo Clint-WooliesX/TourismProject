@@ -37,7 +37,8 @@
   border: 10px solid #73482f;
   box-shadow: 16px 16px 32px 10px black;
   position: fixed;
-  margin-top: calc(100vh * 0.2);
+  margin-top: calc(50vh * 0.4);
+  margin-bottom:30px;
   max-height: 80vh;
   max-width: 80vw;
   z-index: 3;
