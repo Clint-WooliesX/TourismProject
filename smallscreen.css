@@ -110,7 +110,6 @@ article {
 
 footer {
   display: flex;
-  grid-column: 1 / span 2;
   justify-content: center;
   align-items: center;
   text-align: center;
