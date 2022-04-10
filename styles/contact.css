@@ -1,14 +1,11 @@
 .form-container {
-   
   display: flex;
   justify-content: left;
-
 }
 
 .contact-form {
-    
   display: grid;
-  grid-template-columns: min-content ;
+  grid-template-columns: min-content;
   width: 75%;
   gap: 10px;
 }
@@ -22,14 +19,15 @@ label {
   grid-column-end: 1;
 }
 
-input {font-size: 18px;
+input {
+  font-size: 18px;
   display: grid;
   height: 32px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 textarea {
-    font-size: 18px;
+  font-size: 18px;
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
