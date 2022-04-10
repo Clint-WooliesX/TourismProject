@@ -95,51 +95,7 @@ article {
 }
 
 footer {
-  display: flex;
   grid-column: 1 / span 2;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #f2c063;
-  background-color: #73482f;
-  height: 90px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  row-gap: 10px;
-  column-gap: 15px;
-}
-
-.tourismInfo {
-  display: grid;
-  grid-column: 1 / span 4;
-}
-
-.socials {
-  display: grid;
-  width: 32px;
-}
-
-.social-icons {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 10px;
-  column-gap: 20px;
-}
-.tourismInfo {
-  font-family: "Grape Nuts";
-  margin-top: 10px;
-  display: grid;
-  grid-column: 1 / span 4;
-}
-.social-icons img {
-  margin-bottom: 10px;
-  display: grid;
-  width: 32px;
 }
 
 .float-right {

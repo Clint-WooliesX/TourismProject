@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #516673;
+}
+
+.page-content-grid {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #73482f;
+}
+
+.banner {
+  display: grid;
+  position: relative;
+  width: 100%;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+.page-title-tageline {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+}
+
+.page-title-tageline h1 {
+  margin-left: 10px;
+  font-size: calc(100vw * 0.1);
+}
+.page-title-tageline h2 {
+  display: none;
+  margin-left: 80px;
+  font-size: calc(100vw * 0.04);
+  margin-bottom: 15px;
+}
+
+.burger-box {
+  cursor: pointer;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: 40px;
+  width: 100%;
+  font-family: "Grape Nuts";
+  color: #f2c063;
+  background-color: #73482f;
+}
+.hamburger {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 22px;
+  height: 0;
+  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
+}
+
+.navigation-bar {
+  display: grid;
+  text-align: center;
+  align-content: space-between;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  background: #73482f;
+  transition: all 0.25s;
+}
+
+.navigation-bar ul {
+  display: grid; /*flex*/
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Grape Nuts";
+}
+
+.navigation-bar a {
+  font-size: 48px;
+  text-decoration: none;
+  color: #f2c063;
+}
+.navigation-bar a:hover {
+  color: white;
+}
+
+aside {
+  display: none; /*grid*/
+  background: #73482f;
+}
+
+article {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  text-align: justify;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.float-right {
+  border: 3px solid #73482f;
+  border-radius: 10px;
+  margin: 5px;
+  float: right;
+  width: 320px;
+}
+
+.float-left {
+  border: 3px solid #73482f;
+  border-radius: 10px;
+  margin: 5px;
+  float: left;
+  width: 320px;
+}
