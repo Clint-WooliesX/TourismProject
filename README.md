@@ -12,10 +12,10 @@ Create a working tourism website
 - ~~Create templatefiles and boilerplate~~
 - Create HTML content
     - ~~index.html~~
-    - getting_here.html
-    - contact.html
-- Style HTML content
-- Test site at different resolutions and on different devices
+    - ~~getting_here.html~~
+    - ~~contact.html~~
+- ~~Style HTML content~~
+- ~~Test site at different resolutions and on different devices~~
 - **TIDY CSS**
 - **review all class ID names**
 - **refine and optimise code**
