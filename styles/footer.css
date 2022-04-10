@@ -33,3 +33,7 @@ footer {
   display: grid;
   width: 42px;
 }
+
+.social-icons img:hover {
+  filter: drop-shadow(1px 1px 8px rgba(238, 255, 0, 0.8));
+}

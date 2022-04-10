@@ -101,9 +101,10 @@ body {
   font-size: 48px;
   text-decoration: none;
   color: var(--text-color);
+ 
 }
 .navigation-bar a:hover {
-  /* box-shadow:4px 4px 4px 4px white; */
+   text-shadow: 3px 3px 4px #ffde04;
   color: var(--hover-color);
 }
 
@@ -125,7 +126,7 @@ article {
   border-radius: 10px;
   margin: 5px;
   float: right;
-  width: 320px;
+  width: 40%;
 }
 
 .float-left {

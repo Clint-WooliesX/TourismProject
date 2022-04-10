@@ -12,7 +12,7 @@ function reportResize(){
     console.log("window is being resized")
     document.getElementById("navigation-bar").style.height = "0px"
     if(window.innerWidth >900){
-       document.getElementById("navigation-bar").style.height = "36px" 
+       document.getElementById("navigation-bar").style.height = "60px" 
     }
 }
 
