@@ -1,3 +1,15 @@
+:root {
+  --header-text: #f2ec94;
+  --text-color: #f2c063;
+  --background-color: #73482f;
+  --nav-bar: #73482f;
+  --shadow-color: #000000;
+  --tint-color: rgba(0, 0, 0, 0.8);
+  --padding-color: #516673;
+  --article-background: #f2f2f2;
+  --hover-color: rgb(255, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +18,7 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #516673;
+  background-color: var(--padding-color);
 }
 
 .page-content-grid {
@@ -17,7 +29,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 30px;
-  background-color: #73482f;
+  background-color: var(--background-color);
 }
 
 .banner {
@@ -39,8 +51,7 @@ body {
   left: 0;
   width: 100%;
   font-family: "Grape Nuts";
-  color: #f2ec94;
-  background-color: rgba(0, 0, 0, 0);
+  color: var(--header-text);
 }
 
 .page-title-tageline h1 {
@@ -61,7 +72,7 @@ body {
   grid-column: 1 / span 2;
   height: 36px;
   width: 100%;
-  background: #73482f;
+  background: var(--nav-bar);
 }
 
 .navigation-bar ul {
@@ -73,15 +84,15 @@ body {
 }
 .navigation-bar a {
   text-decoration: none;
-  color: #f2c063;
+  color: var(--text-color);
 }
 .navigation-bar a:hover {
-  color: white;
+  color: var(--hover-color);
 }
 
 aside {
   display: grid;
-  background: #73482f;
+  background: var(--background-color);
 }
 
 article {
@@ -91,7 +102,7 @@ article {
   padding: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #f2f2f2;
+  background-color: var(--article-background);
 }
 
 footer {
@@ -99,7 +110,7 @@ footer {
 }
 
 .float-right {
-  border: 3px solid #73482f;
+  border: 3px solid var(--background-color);
   border-radius: 10px;
   margin: 5px;
   float: right;
@@ -107,7 +118,7 @@ footer {
 }
 
 .float-left {
-  border: 3px solid #73482f;
+  border: 3px solid var(--background-color);
   border-radius: 10px;
   margin: 5px;
   float: left;

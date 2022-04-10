@@ -1,3 +1,8 @@
+:root{
+--text-color:#f2c063;
+--background-color:#73482f;
+}
+
 .map {
   display: flex;
   justify-content: center;
@@ -8,8 +13,7 @@
     max-width:600px;
   width:100%;
   height:400px;
-  /* padding-bottom: 80%; */
   border-radius: 30px;
-  border: 3px solid #73482f;
+  border: 3px solid var(--background-color)
 
 }

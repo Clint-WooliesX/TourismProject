@@ -1,10 +1,15 @@
+:root{
+--text-color:#f2c063;
+--background-color:#73482f;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #f2c063;
-  background-color: #73482f;
+  color: var(--text-color);
+  background-color: var(--background-color);
   height: 150px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;

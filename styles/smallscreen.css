@@ -1,3 +1,13 @@
+:root {
+  --text-color: #f2c063;
+  --background-color: #73482f;
+  --shadow-color: #000000;
+  --tint-color: rgba(0, 0, 0, 0.8);
+  --padding-color: #516673;
+  --article-background: #f2f2f2;
+  --hover-color: rgb(255, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +17,13 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #516673;
+  background-color: var(--padding-color);
 }
 
 .page-content-grid {
   display: grid;
   grid-template-columns: auto;
-  background-color: #73482f;
+  background-color: var(--background-color);
 }
 
 .banner {
@@ -33,7 +43,7 @@ body {
   left: 0;
   width: 100%;
   font-family: "Grape Nuts";
-  color: #f2ec94;
+  color: var(--text-color);
 }
 
 .page-title-tageline h1 {
@@ -56,8 +66,8 @@ body {
   height: 40px;
   width: 100%;
   font-family: "Grape Nuts";
-  color: #f2c063;
-  background-color: #73482f;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 .hamburger {
   content: "";
@@ -65,7 +75,8 @@ body {
   left: 15px;
   width: 22px;
   height: 0;
-  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
+  box-shadow: 0 12px 0 1px var(--text-color), 0 20px 0 1px var(--text-color),
+    0 28px 0 1px var(--text-color);
 }
 
 .navigation-bar {
@@ -75,7 +86,7 @@ body {
   overflow: hidden;
   height: 0px;
   width: 100%;
-  background: #73482f;
+  background: var(--background-color);
   transition: all 0.25s;
 }
 
@@ -89,15 +100,16 @@ body {
 .navigation-bar a {
   font-size: 48px;
   text-decoration: none;
-  color: #f2c063;
+  color: var(--text-color);
 }
 .navigation-bar a:hover {
-  color: white;
+  /* box-shadow:4px 4px 4px 4px white; */
+  color: var(--hover-color);
 }
 
 aside {
   display: none; /*grid*/
-  background: #73482f;
+  background: var(--background-color);
 }
 
 article {
@@ -105,11 +117,11 @@ article {
   display: grid;
   text-align: justify;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: var(--article-background);
 }
 
 .float-right {
-  border: 3px solid #73482f;
+  border: 3px solid var(--background-color);
   border-radius: 10px;
   margin: 5px;
   float: right;
@@ -117,7 +129,7 @@ article {
 }
 
 .float-left {
-  border: 3px solid #73482f;
+  border: 3px solid var(--background-color);
   border-radius: 10px;
   margin: 5px;
   float: left;
