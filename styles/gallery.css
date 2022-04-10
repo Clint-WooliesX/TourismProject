@@ -45,10 +45,10 @@
   border: 10px solid var(--background-color);
   box-shadow: 16px 16px 32px 10px var(--shadow-color);
   position: fixed;
-  margin-top: 20px;
-  margin-bottom:30px;
-  max-height: 80vh;
-  max-width: 80vw;
+  margin-top: 10px;
+  margin-bottom:10px;
+  max-height: 90vh;
+  max-width: 90vw;
   z-index: 3;
 }
 
