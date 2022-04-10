@@ -32,22 +32,26 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: stretch;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, var(--tint-color));
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
 }
 .zoom-img img {
   border-radius: 30px;
   border: 10px solid var(--background-color);
   box-shadow: 16px 16px 32px 10px var(--shadow-color);
   position: fixed;
-  margin-top: calc(50vh * 0.4);
+  margin-top: 20px;
   margin-bottom:30px;
   max-height: 80vh;
   max-width: 80vw;
   z-index: 3;
+}
+
+.zoom-img img:hover ,.zoom-img:hover{
+  cursor: zoom-out;
 }
