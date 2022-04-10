@@ -1,25 +1,15 @@
-
-
 .map {
   display: flex;
   justify-content: center;
 }
 
-.map-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.trans-options{
-    display: grid;
-    align-content: flex-start;
-}
-
 .map-frame {
-    display:grid;
-  padding-bottom: 80%;
-  height: 0;
-  width: 80%;
+    margin-top: 20px;
+    max-width:600px;
+  width:100%;
+  height:400px;
+  /* padding-bottom: 80%; */
   border-radius: 30px;
-border: 3px solid #73482f;
+  border: 3px solid #73482f;
+
 }
