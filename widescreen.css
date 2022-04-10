@@ -40,20 +40,20 @@ body {
   width: 100%;
   font-family: "Grape Nuts";
   color: #f2ec94;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .page-title-tageline h1 {
   margin-left: 40px;
-  font-size: calc(100vw*.05);
+  font-size: calc(100vw * 0.05);
 }
 .page-title-tageline h2 {
   margin-left: 80px;
-  font-size: calc(100vw*.02);
+  font-size: calc(100vw * 0.02);
   margin-bottom: 15px;
 }
-.burger-box{
-  display:none;
+.burger-box {
+  display: none;
 }
 .navigation-bar {
   display: grid;
@@ -102,9 +102,28 @@ footer {
   text-align: center;
   color: #f2c063;
   background-color: #73482f;
-  height: 80px;
+  height: fit-content;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.social-icons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.tourismInfo {
+  font-family: "Grape Nuts";
+  margin-top: 10px;
+  display: grid;
+  grid-column: 1 / span 4;
+}
+.social-icons img {
+  margin-bottom: 10px;
+  display: grid;
+  width: 32px;
 }
 
 .float-right {

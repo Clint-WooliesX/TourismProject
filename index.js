@@ -16,5 +16,4 @@ function reportResize(){
     }
 }
 
-
 window.onresize = reportResize;
