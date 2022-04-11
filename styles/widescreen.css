@@ -24,7 +24,7 @@ body {
 .page-content-grid {
   border:1px solid black;
   display: grid;
-  grid-template-columns: auto 10%;
+  grid-template-columns: auto 300px;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 20px;
@@ -58,11 +58,13 @@ body {
 .page-title-tageline h1 {
   margin-left: 40px;
   font-size: calc(100vw * 0.05);
+  text-shadow: 3px 3px 8px black;
 }
 .page-title-tageline h2 {
   margin-left: 80px;
   font-size: calc(100vw * 0.02);
   margin-bottom: 15px;
+  text-shadow: 3px 3px 8px black;
 }
 .burger-box {
   display: none;
@@ -82,6 +84,7 @@ body {
   font-size: 38px;
   list-style: none;
   font-family: "Grape Nuts";
+  text-shadow:3px 3px 8px black;
 }
 .navigation-bar a {
   text-decoration: none;
@@ -95,6 +98,7 @@ body {
 aside {
   display: grid;
   background: var(--background-color);
+  min-width:100px;
 }
 
 article {
@@ -107,6 +111,9 @@ article {
   box-shadow:inset -6px 6px 6px black;
   background-color: var(--article-background);
 }
+article p{
+  font-size: 22px;
+}
 
 footer {
   grid-column: 1 / span 2;
@@ -117,7 +124,7 @@ footer {
   border-radius: 10px;
   margin: 5px;
   float: right;
-  width: 320px;
+  width: 400px;
 }
 
 .float-left {
@@ -125,5 +132,5 @@ footer {
   border-radius: 10px;
   margin: 5px;
   float: left;
-  width: 320px;
+  width: 250px;
 }

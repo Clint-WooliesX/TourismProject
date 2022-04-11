@@ -18,8 +18,15 @@ label {
   align-self: center;
   grid-column-end: 1;
 }
+.message{
+  align-self: flex-start;
+}
 
 input {
+  box-shadow: inset -2px 2px 8px black;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 18px;
   display: grid;
   height: 32px;
@@ -27,6 +34,9 @@ input {
   grid-column-end: 3;
 }
 textarea {
+  box-shadow: inset -2px 2px 8px black;
+  border-radius: 15px;
+  padding: 10px;
   font-size: 18px;
   display: grid;
   grid-column-start: 2;
@@ -34,17 +44,25 @@ textarea {
 }
 
 .buttons {
-  font-size: 18px;
   display: flex;
   justify-content: flex-end;
   grid-column-start: 2;
   grid-column-end: 2;
-  margin: 10px;
+
+  /* margin: 10px; */
 }
 
-.reset {
-  margin-right: 10px;
-}
+.reset,
 .submit {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
   margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.reset:hover,
+.submit:hover {
+  background-color: darkgray;
+  cursor: pointer;
 }
