@@ -1,206 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
-      rel="stylesheet"
-    />
-    <!-- google font -->
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 900px)"
-      href="/styles/widescreen.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 900px)"
-      href="/styles/smallscreen.css"
-    />
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/gallery.css" />
-    <script src="/javascript/gallery.js" defer></script>
-    <script src="/javascript/index.js"></script>
-    <title>Visit Wisemans Ferry</title>
-  </head>
-  <body>
-    <main class="page-content-grid">
-      <div
-        id="zoomImg"
-        class="zoom-img"
-        onclick="closeImage()"
-        style="display: none">
-      
-        <!-- <div class="responsive-box">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
+  <!-- google font -->
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/styles/widescreen.css" />
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="/styles/smallscreen.css" />
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/gallery.css" />
+  <script src="/javascript/gallery.js" defer></script>
+  <script src="/javascript/index.js"></script>
+  <title>Visit Wisemans Ferry</title>
+</head>
+
+<body>
+  <main class="page-content-grid">
+    <div id="zoomImg" class="zoom-img" onclick="closeImage()" style="display: none">
+
+      <!-- <div class="responsive-box">
         </div> -->
 
-        <img
-          id="zoomedImage"
-          src="/gallery-images/gallery-img1.JPG"
-          alt=""
-          onclick="closeImage()"
-        />
+      <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="" onclick="closeImage()" />
+    </div>
+
+    <header class="banner">
+      <img id="hero-img" src="/images/banner.jpg" alt="" />
+
+      <heading class="page-title-tageline">
+        <h1>Wisemans Ferry</h1>
+        <h2>"Come visit the Hawkesbury"</h2>
+      </heading>
+    </header>
+
+    <div class="burger-box" onclick="openNav()">
+      <h2>Come visit the Hawkesbury</h2>
+      <div class="hamburger"></div>
+    </div>
+
+    <nav id="navigation-bar" class="navigation-bar">
+      <ul>
+        <li><a href="/index.html">Overview</a></li>
+        <li><a href="/getting_here.html">Getting here</a></li>
+        <li class="thisPage"><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h3>Gallery</h3>
+      <br>
+      <div class="gallery-grid">
+        <img src="/gallery-images/gallery-img1.JPG" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img2.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img3.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img4.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img5.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img6.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img7.jpeg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img8.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img9.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img12.JPG" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img10.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img11.JPG" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img14.JPG" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img16.jpg" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img15.JPG" alt="" onclick="openImg(this.src)" />
       </div>
+    </article>
 
-      <header class="banner">
-        <img id="hero-img" src="/images/banner.jpg" alt="" />
-
-        <heading class="page-title-tageline">
-          <h1>Wisemans Ferry</h1>
-          <h2>"Come visit the Hawkesbury"</h2>
-        </heading>
-      </header>
-
-      <div class="burger-box" onclick="openNav()">
-        <h2>Come visit the Hawkesbury</h2>
-        <div class="hamburger"></div>
+    <aside>
+      <div class="coming-up">
+        <div class="ferryHours">
+          <h3>Ferry hours</h3><br>
+          <p>The Webbs Creek Ferry at Wisemans Ferry crosses the Hawkesbury River just south of the junction of the
+            Macdonald River.</p><br>
+          <p>Operates 24/hrs 7days a week.</p><br>
+          <p>
+            only closed for maintenance on the 1st Tuesday of each month from 9.30am
+            till 12.00pm.
+          </p>
+        </div>
       </div>
+      <div class="coming-up">
+        <h3>Coming up</h3>
+        <hr>
+        <P>16/4/22 - Tidal mills & Colonial food</P>
+        <hr>
+        <P>17/4/22 - Easter egg hunt in the park</P>
+        <hr>
+        <P>25/4/22 - ANZAC Day Dawn service</P>
+        <hr>
+        <P>13/8/22 - Bark Buster Blitz</P>
+        <hr>
+        <P>28/9/22 - Return to rio holloween special</P>
+        <hr>
+      </div>
+    </aside>
 
-      <nav id="navigation-bar" class="navigation-bar">
-        <ul>
-          <li><a href="/index.html">Overview</a></li>
-          <li><a href="/getting_here.html">Getting here</a></li>
-          <li class="thisPage"><a  href="/gallery.html">Gallery</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <article>
-        <h3>Gallery</h3>
-        <br>
-        <div class="gallery-grid">
-          <img
-            src="/gallery-images/gallery-img1.JPG"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img2.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img3.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img4.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img5.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img6.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img7.jpeg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img8.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img9.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img12.JPG"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img10.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img11.JPG"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img14.JPG"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img16.jpg"
-            alt=""
-            onclick="openImg(this.src)"
-          />
-          <img
-            src="/gallery-images/gallery-img15.JPG"
-            alt=""
-            onclick="openImg(this.src)"
-          />
+    <footer>
+      <div class="social-icons">
+        <div class="tourismInfo">
+          <p>Tourism NSW</p>
+          <p>Hawkesbury Region</p>
         </div>
-      </article>
+        <a href="https://www.facebook.com/visitnsw"><img class="socials" src="/images/facebook.png" alt="" /></a>
+        <a href="https://www.instagram.com/visitnsw/"><img class="socials" src="/images/instagram.png" alt="" /></a>
+        <a href="https://twitter.com/NewSouthWales"><img class="socials" src="/images/twitter.png" alt="" /></a>
+        <a href="https://github.com/Clint-WooliesX"><img class="socials" src="/images/github.png" alt=""
+            srcset="" /></a>
+      </div>
+    </footer>
+  </main>
+</body>
 
-          <aside>
-            <div class="coming-up">
-              <div class="ferryHours">
-                <h3>Ferry hours</h3>
-                <p>The Webbs Creek Ferry at Wisemans Ferry crosses the Hawkesbury River just south of the junction of the
-                  Macdonald River.</p><br>
-                <p>Operates 24/hrs 7days a week.</p><br>
-                <p>
-                  only closed for maintenance on the 1st Tuesday of each month from 9.30am
-                  till 12.00pm.
-                </p>
-              </div>
-            </div>
-            <div class="coming-up">
-              <h3>Coming up</h3>
-              <hr>
-              <P>16/4/22 - Tidal mills & Colonial food</P>
-              <hr>
-              <P>17/4/22 - Easter egg hunt in the park</P>
-              <hr>
-              <P>25/4/22 - ANZAC Day Dawn service</P>
-              <hr>
-              <P>13/8/22 - Bark Buster Blitz</P>
-              <hr>
-              <P>28/9/22 - Return to rio holloween special</P>
-              <hr>
-            </div>
-          </aside>
-
-      <footer>
-        <div class="social-icons">
-          <div class="tourismInfo">
-            <p>Tourism NSW</p>
-            <p>Hawkesbury Region</p>
-          </div>
-          <a href="https://www.facebook.com/visitnsw"
-            ><img class="socials" src="/images/facebook.png" alt=""
-          /></a>
-          <a href="https://www.instagram.com/visitnsw/"
-            ><img class="socials" src="/images/instagram.png" alt=""
-          /></a>
-          <a href="https://twitter.com/NewSouthWales"
-            ><img class="socials" src="/images/twitter.png" alt=""
-          /></a>
-          <a href="https://github.com/Clint-WooliesX"
-            ><img class="socials" src="/images/github.png" alt="" srcset=""
-          /></a>
-        </div>
-      </footer>
-    </main>
-  </body>
 </html>
