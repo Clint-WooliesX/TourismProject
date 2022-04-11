@@ -23,6 +23,7 @@ label {
 }
 
 input {
+  border: 1px solid black;
   box-shadow: inset -2px 2px 8px black;
   border-radius: 15px;
   padding-left: 10px;
