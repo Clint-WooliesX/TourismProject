@@ -1,19 +1,21 @@
-:root{
---text-color:#f2c063;
---background-color:#73482f;
+:root {
+  --text-color: #f2c063;
+  --background-color: #73482f;
 }
 
 .map {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: 250px;
+  padding-left: 15px;
+  padding-right: 30px;
+  transition-duration: 0.3s;
 }
 
 .map-frame {
-    /* margin-top: 20px; */
-    max-width:600px;
-  width:100%;
-  height:400px;
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
   border-radius: 30px;
-  border: 3px solid var(--background-color)
-
+  border: 3px solid var(--background-color);
 }
+
