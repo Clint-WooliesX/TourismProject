@@ -34,17 +34,18 @@
   left: 0;
   display: none;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
 }
+
 .zoom-img img {
   border-radius: 30px;
   border: 10px solid var(--background-color);
   box-shadow: 16px 16px 32px 10px var(--shadow-color);
-  position: fixed;
+  position: flex;
   margin-top: 10px;
   margin-bottom:10px;
   max-height: 90vh;
