@@ -104,7 +104,7 @@ body {
  
 }
 .navigation-bar a:hover {
-   text-shadow: 3px 3px 4px #ffde04;
+   text-shadow: 2px 2px 4px #ffde04;
   color: var(--hover-color);
 }
 
