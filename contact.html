@@ -1,117 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
-      rel="stylesheet"
-    />
-    <!-- google font -->
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 900px)"
-      href="/styles/widescreen.css"/>
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 900px)"
-      href="/styles/smallscreen.css"/>
 
-    <link rel="stylesheet" href="/styles/contact.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <script src="/javascript/index.js"></script>
-    <title>Visit Wisemans Ferry</title>
-  </head>
-  <body>
-    <main class="page-content-grid">
-      <header class="banner">
-        <img id="hero-img" src="/images/banner.jpg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
+  <!-- google font -->
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/styles/widescreen.css" />
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="/styles/smallscreen.css" />
 
-        <heading class="page-title-tageline">
-          <h1>Wisemans Ferry</h1>
-          <h2>"Come visit the Hawkesbury"</h2>
-        </heading>
-      </header>
+  <link rel="stylesheet" href="/styles/contact.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <script src="/javascript/contact.js"></script>
+  <script src="/javascript/index.js"></script>
+  <title>Visit Wisemans Ferry</title>
+</head>
 
-      <div class="burger-box" onclick="openNav()">
-        <h2>Come visit the Hawkesbury</h2>
-        <div class="hamburger"></div>
-      </div>
+<body>
+  <main class="page-content-grid">
+    <header class="banner">
+      <img id="hero-img" src="/images/banner.jpg" alt="" />
 
-      <nav id="navigation-bar" class="navigation-bar">
-        <ul>
-          <li><a href="/index.html">Overview</a></li>
-          <li><a href="/getting_here.html">Getting here</a></li>
-          <li><a href="/gallery.html">Gallery</a></li>
-          <li><a href="/contact.html" style="color:white;text-shadow: 3px 3px 4px #ffde04;">Contact</a></li>
-        </ul>
-      </nav>
+      <heading class="page-title-tageline">
+        <h1>Wisemans Ferry</h1>
+        <h2>"Come visit the Hawkesbury"</h2>
+      </heading>
+    </header>
 
-      <article>
-        <h3>Contact</h3>
-        <br />
-        <p>
-          Please complete the form below if you would like to make an enquiry.
-          We will endeavour to respond within 48hrs.
-        </p>
-        <br />
-        <div class="form-container">
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            id="contactForm"
-            class="contact-form"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="6f6472ec-be14-40eb-93ba-6582b32ba18f"
-            />
+    <div class="burger-box" onclick="openNav()">
+      <h2>Come visit the Hawkesbury</h2>
+      <div class="hamburger"></div>
+    </div>
 
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Full name"/>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="example@domain.com"/>
-            <label for="phone">Phone:</label>
-            <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678"/>
-            <label class="message" for="message">Message:</label>
-            <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
-            <div class="buttons">
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://web3forms.com/success"
-              />
-              <button type="reset" value="Reset" class="reset">Reset</button>
-              <button type="submit" value="Submit" class="submit">Submit</button>
-            </div>
-          </form>
-        </div>
-      </article>
-      <footer>
-        <div class="social-icons">
-          <div class="tourismInfo">
-            <p>Tourism NSW</p>
-            <p>Hawkesbury Region</p>
+    <nav id="navigation-bar" class="navigation-bar">
+      <ul>
+        <li><a href="/index.html">Overview</a></li>
+        <li><a href="/getting_here.html">Getting here</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/contact.html" style="color:white;text-shadow: 3px 3px 4px #ffde04;">Contact</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h3>Contact</h3>
+      <br />
+      <p>
+        Please complete the form below if you would like to make an enquiry.
+        We will endeavour to respond within 48hrs.
+      </p>
+      <br />
+      <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+          <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Full name" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="example@domain.com" required/>
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678" />
+          <label class="message" for="message">Message:</label>
+          <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
+          <div class="buttons">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+            <button type="reset" value="Reset" class="reset">Reset</button>
+            <button type="submit" value="Submit" class="submit">Submit</button>
           </div>
-          <a href="https://www.facebook.com/visitnsw"
-            ><img class="socials" src="/images/facebook.png" alt=""
-          /></a>
-          <a href="https://www.instagram.com/visitnsw/"
-            ><img class="socials" src="/images/instagram.png" alt=""
-          /></a>
-          <a href="https://twitter.com/NewSouthWales"
-            ><img class="socials" src="/images/twitter.png" alt=""
-          /></a>
-          <a href="https://github.com/Clint-WooliesX"
-            ><img class="socials" src="/images/github.png" alt="" srcset=""
-          /></a>
+        </form>
+      </div>
+    </article>
+    <footer>
+      <div class="social-icons">
+        <div class="tourismInfo">
+          <p>Tourism NSW</p>
+          <p>Hawkesbury Region</p>
         </div>
-      </footer>
-    </main>
-  </body>
+        <a href="https://www.facebook.com/visitnsw"><img class="socials" src="/images/facebook.png" alt="" /></a>
+        <a href="https://www.instagram.com/visitnsw/"><img class="socials" src="/images/instagram.png" alt="" /></a>
+        <a href="https://twitter.com/NewSouthWales"><img class="socials" src="/images/twitter.png" alt="" /></a>
+        <a href="https://github.com/Clint-WooliesX"><img class="socials" src="/images/github.png" alt=""
+            srcset="" /></a>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
