@@ -107,7 +107,9 @@ body {
    text-shadow: 2px 2px 4px #ffde04;
   color: var(--hover-color);
 }
-
+.thisPage a{
+  color:#f2ec94;text-shadow: 1px 1px 4px #ffde04;
+}
 aside {
   display: none; /*grid*/
   background: var(--background-color);
