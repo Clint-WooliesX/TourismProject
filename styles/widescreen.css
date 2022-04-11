@@ -24,7 +24,7 @@ body {
 .page-content-grid {
   border:1px solid black;
   display: grid;
-  grid-template-columns: auto 300px;
+  grid-template-columns: auto 150px;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 20px;
@@ -98,7 +98,7 @@ body {
 aside {
   display: grid;
   background: var(--background-color);
-  min-width:100px;
+
 }
 
 article {

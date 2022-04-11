@@ -19,14 +19,19 @@
   display: grid;
   width: 300px;
   height: 200px;
+  top:0;
+  left:0;
+
 }
 
 .gallery-grid img:hover {
   position: relative;
   cursor: zoom-in;
   top: -10px;
-  left: -10px;
-  box-shadow: 10px 10px 16px 4px var(--shadow-color);
+  left: 10px;
+  box-shadow: -10px 10px 16px 4px var(--shadow-color);
+  transition: .2s;
+  
 }
 .zoom-img {
   position: fixed;
