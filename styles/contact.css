@@ -62,7 +62,11 @@ textarea {
   font-size: 18px;
   font-weight: bold;
 }
-.reset:hover,
+.reset:hover{
+  background-color: red;
+  color:white
+}
+
 .submit:hover {
   background-color: darkgray;
   cursor: pointer;

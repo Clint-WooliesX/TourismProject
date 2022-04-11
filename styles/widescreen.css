@@ -120,7 +120,7 @@ footer {
 }
 
 .float-right {
-  border: 3px solid var(--background-color);
+  /* border: 3px solid var(--background-color); */
   border-radius: 10px;
   margin: 5px;
   float: right;
@@ -133,4 +133,8 @@ footer {
   margin: 5px;
   float: left;
   width: 250px;
+}
+
+.border{
+   border: 3px solid var(--background-color);
 }
