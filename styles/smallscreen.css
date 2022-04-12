@@ -1,4 +1,5 @@
 :root {
+  --header-text: #f2ec94;
   --text-color: #f2c063;
   --background-color: #73482f;
   --shadow-color: #000000;
@@ -43,12 +44,13 @@ body {
   left: 0;
   width: 100%;
   font-family: "Grape Nuts";
-  color: var(--text-color);
+  color: var(--header-text);
 }
 
 .page-title-tageline h1 {
   margin-left: 10px;
   font-size: calc(100vw * 0.1);
+  text-shadow: 3px 3px 8px black;
 }
 .page-title-tageline h2 {
   display: none;

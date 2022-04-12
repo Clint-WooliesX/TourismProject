@@ -25,8 +25,12 @@
 
       <!-- <div class="responsive-box">
         </div> -->
-
-      <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="" onclick="closeImage()" />
+      <div class="gallery-box">
+        <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="sample alt text" onclick="closeImage()" />
+        <div class="caption-box">
+          <h1 id="galleryCaption" class="gallery-caption">This is a very long caption</h1>
+        </div>
+      </div>
     </div>
 
     <header class="banner">
@@ -56,21 +60,34 @@
       <h3>Gallery</h3>
       <br>
       <div class="gallery-grid">
-        <img src="/gallery-images/gallery-img1.JPG" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img2.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img3.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img4.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img5.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img6.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img7.jpeg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img8.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img9.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img12.JPG" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img10.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img11.JPG" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img14.JPG" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img16.jpg" alt="" onclick="openImg(this.src)" />
-        <img src="/gallery-images/gallery-img15.JPG" alt="" onclick="openImg(this.src)" />
+        <img src="/gallery-images/gallery-img1.JPG" alt="Drone aerial shot of Wisemans Ferry"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img2.jpg" alt="Settlers Arms Inn - St. Albans"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img3.jpg" alt="View over Hawkesbury river"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img4.jpg" alt="Looking out towards the McDonald river"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img5.jpg" alt="Scenic walks in the Dahrur national park"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img6.jpg" alt="Looking out towards the McDonald river"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img7.jpeg" alt="Original Punt crossing from 1908"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img8.jpg" alt="Todays large Ferries" onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img9.jpg" alt="Wisemans Ferry Central - cafe, supermarket, news agency etc."
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img12.JPG" alt="Drone aerial photo of Wisemans ferry"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img10.jpg" alt="Looking out towards the McDonald river"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img11.JPG" alt="Drone aerial shot of Wisemans Ferry"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img14.JPG" alt="Wisemans Ferry hotel" onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img16.jpg" alt="Wisemans Ferry hotel early 1900's"
+          onclick="openImg(this.src,this.alt)" />
+        <img src="/gallery-images/gallery-img15.JPG" alt="Wisemans ferry riverside picnic area"
+          onclick="openImg(this.src,this.alt)" />
       </div>
     </article>
 

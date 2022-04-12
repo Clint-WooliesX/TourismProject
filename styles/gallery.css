@@ -1,10 +1,9 @@
-:root{
---text-color:#f2c063;
---background-color:#73482f;
---shadow-color: #000000;
---tint-color:rgba(0, 0, 0, 0.8);
+:root {
+  --text-color: #f2c063;
+  --background-color: #73482f;
+  --shadow-color: #000000;
+  --tint-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .gallery-grid {
   display: grid;
@@ -19,10 +18,10 @@
   display: grid;
   width: 300px;
   height: 200px;
-   position: relative;
-    top:0;
-  left:0;
- transition: .2s;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
 }
 
 .gallery-grid img:hover {
@@ -31,7 +30,7 @@
   top: -10px;
   left: 10px;
   box-shadow: -4px 4px 8px 0px var(--shadow-color);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .zoom-img {
@@ -53,12 +52,32 @@
   box-shadow: 16px 16px 32px 10px var(--shadow-color);
   position: flex;
   margin-top: 10px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   max-height: 90vh;
   max-width: 90vw;
   z-index: 3;
 }
 
-.zoom-img img:hover ,.zoom-img:hover{
+.zoom-img img:hover,
+.zoom-img:hover {
   cursor: zoom-out;
+}
+.gallery-box {
+  position: relative;
+}
+
+.caption-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+  left: 0;
+}
+
+.gallery-caption {
+  display: flex;
+  font-family: "Grape Nuts";
+  color: #f2c063;
 }
