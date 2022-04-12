@@ -17,7 +17,8 @@
 }
 
 .body {
-  @extend %grid-center;
+  display: flex;
+  justify-content: center;
   background-color: $color-bodyMargin;
 
   .main {
@@ -60,9 +61,11 @@
   }
 }
 
-.burger-Wrapper {
+.burger-wrapper {
   display: none;
-  //@include to go here - small screen
+  font-family: $font-headings;
+  color: $color-navBar;
+  // this needs looking at//
 }
 
 .nav-menu {
@@ -98,7 +101,7 @@
   grid-template-columns: auto;
   row-gap: 30px;
   width: 180px;
-  margin: 0 25px 0 25px;
+  margin: 0 20px 0 20px;
   font-size: 95%;
   background: $font-article;
 }
@@ -109,14 +112,18 @@
   @extend %contentShadow;
   background-color: $color-article;
   border-radius: 30px;
+  padding: 15px;
+  overflow: hidden;
 
-  &__text-box {
-    padding: 10px;
-    overflow: hidden;
-  }
   &--horizontal-line {
     color: #9fa3a6;
     margin: 10px;
+  }
+  &--justified-text {
+    text-align: justify;
+  }
+  &--center-text {
+    text-align: center;
   }
 }
 

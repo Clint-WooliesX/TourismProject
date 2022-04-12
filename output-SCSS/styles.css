@@ -2,7 +2,7 @@
   box-shadow: inset -6px 6px 6px #000000;
 }
 
-.nav-menu, .body {
+.nav-menu {
   display: grid;
   align-content: center;
 }
@@ -17,6 +17,8 @@
 }
 
 .body {
+  display: flex;
+  justify-content: center;
   background-color: #516673;
 }
 .body .main {
@@ -54,8 +56,10 @@
   text-shadow: -3px 4px 8px black;
 }
 
-.burger-Wrapper {
+.burger-wrapper {
   display: none;
+  font-family: "Grape Nuts";
+  color: #f2c063;
 }
 
 .nav-menu {
@@ -90,7 +94,7 @@
   grid-template-columns: auto;
   row-gap: 30px;
   width: 180px;
-  margin: 0 25px 0 25px;
+  margin: 0 20px 0 20px;
   font-size: 95%;
   background: Arial, Helvetica, sans-serif;
 }
@@ -100,14 +104,18 @@
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 30px;
-}
-.panel__text-box {
-  padding: 10px;
+  padding: 15px;
   overflow: hidden;
 }
 .panel--horizontal-line {
   color: #9fa3a6;
   margin: 10px;
+}
+.panel--justified-text {
+  text-align: justify;
+}
+.panel--center-text {
+  text-align: center;
 }
 
 .article {
