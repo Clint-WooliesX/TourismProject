@@ -1,40 +1,44 @@
-@use "pallet";
-@use "font";
+@import "pallet";
+@import "fonts";
+
+%grid-center {
+  display: grid;
+  align-content: center;
+}
 
 .body {
-  display: flex;
-  justify-content: center;
+  @extend %grid-center;
   background-color: $color-bodyMargin;
 
-  &body__main {
+  &__main {
     display: grid;
     grid-template-columns: auto 250px;
     margin: 20px 10px 20px 10px;
     border-radius: 30px;
     background-color: $color-background;
 
-    &body__banner {
+    &__banner {
       position: relative;
       grid-column: 1 / span 2;
 
-      &body__heroImg {
+      &__heroImg {
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         width: 100%;
 
-        &body__title-tag {
+        &__title-tag {
           position: absolute;
           bottom: 0;
           left: 0;
           font-family: $font-headings;
           color: $color-header;
 
-          &body__title {
+          &__title {
             margin-left: 40px;
             font-size: calc(100vw * 0.05);
             text-shadow: 3px 3px 8px $color-dropShadow;
           }
-          &body__tag {
+          &__tag {
             margin-left: 80px;
             font-size: calc(100vw * 0.02);
             margin-bottom: 15px;
@@ -45,4 +49,3 @@
     }
   }
 }
-

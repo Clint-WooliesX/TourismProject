@@ -1,0 +1,42 @@
+.body {
+  display: grid;
+  align-content: center;
+}
+
+.body {
+  background-color: #516673;
+}
+.body__main {
+  display: grid;
+  grid-template-columns: auto 250px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 30px;
+  background-color: #73482f;
+}
+.body__main__banner {
+  position: relative;
+  grid-column: 1/span 2;
+}
+.body__main__banner__heroImg {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+}
+.body__main__banner__heroImg__title-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+}
+.body__main__banner__heroImg__title-tag__title {
+  margin-left: 40px;
+  font-size: 5vw;
+  text-shadow: 3px 3px 8px #000000;
+}
+.body__main__banner__heroImg__title-tag__tag {
+  margin-left: 80px;
+  font-size: 2vw;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 8px black;
+}
