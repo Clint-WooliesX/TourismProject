@@ -59,7 +59,7 @@ body {
   margin-bottom: 15px;
 }
 
-.burger-box {
+.burger-wrapper {
   cursor: pointer;
   display: grid;
   position: relative;
@@ -155,7 +155,7 @@ aside hr {
   background-color: #f2f2f2;
   border-radius: 30px;
   padding-top: 15px;
-  text-align: center; */
+  text-align: center;
 }
 
 .coming-up p {
