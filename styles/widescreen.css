@@ -194,7 +194,7 @@ footer {
 .hover-view:hover {
   max-width: 100%;
   width: 500px;
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
   transition-duration: 0.3s;
 }
 
