@@ -10,48 +10,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
   <!-- google font -->
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/styles/widescreen.css" />
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="/styles/smallscreen.css" />
-  <link rel="stylesheet" href="/styles/footer.css">
+  <!-- <link rel="stylesheet" href="/styles/footer.css"> -->
   <script src="/javascript/index.js"></script>
   <title>Visit Wisemans Ferry</title>
 </head>
 
-<body>
-  <main class="page-content-grid">
-    <header class="banner">
-      <img id="hero-img" src="/images/banner.jpg" alt="" />
+<body class="body">
+  <main class="main">
+    <header class="header">
+      <img class="header__hero-img" src="/images/banner.jpg" alt="" />
 
-      <heading class="page-title-tageline">
-        <h1>Wisemans Ferry</h1>
-        <h2>"Come visit the Hawkesbury"</h2>
+      <heading class="header__hero-img__title-tag">
+        <h1 class="header__hero-img__title-tag--title">Wisemans Ferry</h1>
+        <h2 class="header__hero-img__title-tag--tag">"Come visit the Hawkesbury"</h2>
       </heading>
     </header>
-   
+
     <nav class="burger-wrapper" onclick="openNav()">
       <h2>Come visit the Hawkesbury</h2>
       <div class="hamburger"></div>
     </nav>
-    
-    <nav id="navigation-bar" class="navigation-bar">
-      <ul>
-        <li class="thisPage"><a href="/index.html">Overview</a></li>
-        <li><a href="/getting_here.html">Getting here</a></li>
-        <li ><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+
+    <nav id="navigation-bar" class="nav-menu">
+      <ul class="nav-menu__nav-items nav-menu__nav-items--hover  nav-menu__nav-items--glow">
+        <li><a class="nav-menu__nav-items--this-page nav-menu__nav-items--link-color" href="/index.html">Overview</a>
+        </li>
+        <li><a class="nav-menu__nav-items--link-color" href="/getting_here.html">Getting here</a></li>
+        <li><a class="nav-menu__nav-items--link-color" href="/gallery.html">Gallery</a></li>
+        <li><a class="nav-menu__nav-items--link-color" href="/contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <article>
+    <article class="article ">
       <h3>Overview</h3>
       <br>
       <div>
-        <p class="caption-text">
-          <img class="float-right border hover-view" src="/images/ferry.jpg" />
+        <p class="article--caption-text">
+          <img class="article__float-right" src="/images/ferry.jpg" />
           <br />
           <span>Hover to enlarge</span>
         </p>
-        <p>
+        <p class="article__paragraph">
           Wisemans Ferry is the oldest ferry crossing still in operation in
           New South Wales. The river settlement of Wisemans Ferry is located
           in the heart of the Hawkesbury River around 60 kilometres north-west
@@ -64,12 +65,12 @@
         <br>
       </div>
       <div>
-        <p class="caption-text">
-          <img class="float-right border hover-view" src="/images/rockCarving.JPG" />
+        <p class="article--caption-text">
+          <img class="article__float-right " src="/images/rockCarving.JPG" />
           <br />
           <span>Hover to enlarge</span>
         </p>
-        <p>
+        <p class="article__paragraph">
           Filled with Aboriginal and European history, the area’s heritage
           shops and famous pub is a great spot to relax on a getaway from the
           city. The nearby Dharug National Park contains 16 kilometres of the
@@ -86,8 +87,8 @@
       </div>
     </article>
 
-    <aside>
-      <div class="coming-up">
+    <aside class="side-bar ">
+      <div class="panel__text-box">
         <div class="ferryHours">
           <h3>Ferry hours</h3><br>
           <p>The Webbs Creek Ferry at Wisemans Ferry crosses the Hawkesbury River just south of the junction of the

@@ -11,3 +11,8 @@
   $color-selectedGlow: #ffde04;
   $color-smallCaptions:#9fa3a6;
   $color-infoPanels:#f2f2f2;
+
+  // shadow effects
+  %contentShadow {
+    box-shadow: inset -6px 6px 6px $color-dropShadow;
+  }

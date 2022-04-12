@@ -1,51 +1,157 @@
 @import "pallet";
 @import "fonts";
 
+// extends
 %grid-center {
   display: grid;
   align-content: center;
+}
+%contentShadow {
+  box-shadow: inset -6px 6px 6px $color-dropShadow;
+}
+// extends
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .body {
   @extend %grid-center;
   background-color: $color-bodyMargin;
 
-  &__main {
+  .main {
     display: grid;
     grid-template-columns: auto 250px;
     margin: 20px 10px 20px 10px;
     border-radius: 30px;
     background-color: $color-background;
+  }
+  .header {
+    position: relative;
+    grid-column: 1 / span 2;
 
-    &__banner {
-      position: relative;
-      grid-column: 1 / span 2;
+    &__hero-img {
+      //change id to class
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      width: 100%;
 
-      &__heroImg {
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        width: 100%;
+      &__title-tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-family: $font-headings;
+        color: $color-header;
 
-        &__title-tag {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          font-family: $font-headings;
-          color: $color-header;
-
-          &__title {
-            margin-left: 40px;
-            font-size: calc(100vw * 0.05);
-            text-shadow: 3px 3px 8px $color-dropShadow;
-          }
-          &__tag {
-            margin-left: 80px;
-            font-size: calc(100vw * 0.02);
-            margin-bottom: 15px;
-            text-shadow: 3px 3px 8px black;
-          }
+        &--title {
+          margin-left: 40px;
+          font-size: calc(100vw * 0.05);
+          text-shadow: $font-shadow;
+        }
+        &--tag {
+          margin-left: 80px;
+          font-size: calc(100vw * 0.02);
+          margin-bottom: 15px;
+          text-shadow: $font-shadow;
         }
       }
     }
+  }
+}
+
+.burger-Wrapper {
+  display: none;
+  //@include to go here - small screen
+}
+
+.nav-menu {
+  @extend %grid-center;
+  grid-column: 1 / span 2;
+  font-family: "Grape Nuts";
+  font-size: 38px;
+  text-shadow: $font-shadow;
+  &__nav-items {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    &--link-color {
+      text-decoration: none;
+      color: $color-navBar;
+    }
+    &--hover {
+      color: $color-hover;
+    }
+    &--this-page {
+      color: $color-hover;
+    }
+    &--glow {
+      text-shadow: 1px 1px 4px $color-selectedGlow;
+    }
+  }
+}
+
+.side-bar {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  grid-template-columns: auto;
+  row-gap: 30px;
+  width: 180px;
+  margin: 0 25px 0 25px;
+  font-size: 95%;
+  background: $font-article;
+}
+
+.panel {
+  font-family: $font-article;
+  width: 100%;
+  @extend %contentShadow;
+  background-color: $color-article;
+  border-radius: 30px;
+
+  &__text-box {
+    padding: 10px;
+    overflow: hidden;
+  }
+  &--horizontal-line {
+    color: #9fa3a6;
+    margin: 10px;
+  }
+}
+
+.article {
+  display: grid;
+  text-align: justify;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: $font-article;
+  @extend %contentShadow;
+  background-color: $color-article;
+
+  &__paragraph {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 600px;
+    font-size: 22px;
+  }
+  &__float-right {
+    border-radius: 10px;
+    border: 3px solid $color-background;
+    margin: 5px;
+    float: right;
+    max-width: 100%;
+    width: 250px;
+  }
+  &--caption-text {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    float: right;
+    display: block;
+    color: #9fa3a6;
+    font-size: 14px;
+    text-align: center;
   }
 }
