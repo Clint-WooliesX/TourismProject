@@ -74,13 +74,14 @@
   font-family: "Grape Nuts";
   font-size: 38px;
   text-shadow: $font-shadow;
-  &__nav-items {
+}
+.nav-items {
     display: flex;
     justify-content: space-around;
     list-style: none;
     color: $color-navBar;
   }
-}
+
 .nav-link {
   color: $color-navBar;
   text-decoration: none;
@@ -138,29 +139,32 @@
   font-family: $font-article;
   @extend %contentShadow;
   background-color: $color-article;
-
-  &__paragraph {
+}
+  .paragraph {
     padding-left: 60px;
     padding-right: 60px;
     max-width: 600px;
     font-size: 22px;
+    margin-bottom:30px;
   }
-  &__float-right {
+
+.float-right {
+  margin: 5px 50px 0 15px;
+  float: right;
+
+
+  &__image {
     border-radius: 10px;
     border: 3px solid $color-background;
-    margin: 5px 50px 0 0;
-    float: right;
     max-width: 100%;
     width: 250px;
   }
-  &--caption-text {
-    text-align: center;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    float: right;
-    display: block;
-    color: #9fa3a6;
-    font-size: 14px;
-    text-align: center;
-  }
+}
+.caption-text {
+  text-align: center;
+  padding-bottom: 15px;
+  display: block;
+  color: #9fa3a6;
+  font-size: 14px;
+  text-align: center;
 }
