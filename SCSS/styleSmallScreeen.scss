@@ -1,0 +1,88 @@
+@import "fonts";
+@import "pallet";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: $color-background;
+}
+
+.header {
+  display: grid;
+  position: relative;
+  width: 100%;
+
+  &__hero-img {
+    width: 100%;
+
+    &__title-tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-family: $font-headings;
+      color: $color-header;
+
+      &--title {
+        margin-left: 10px;
+        font-size: calc(100vw * 0.1);
+        text-shadow: $font-shadow;
+      }
+      &--tag {
+        display: none;
+      }
+    }
+  }
+}
+.burger-wrapper {
+  cursor: pointer;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: 40px;
+  width: 100%;
+  font-family: $font-headings;
+  color: $color-header;
+
+  &__hamburger {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 22px;
+    height: 0;
+    box-shadow: 0 12px 0 1px $color-navBar, 0 20px 0 1px $color-navBar,
+      0 28px 0 1px $color-navBar;
+  }
+
+  &__nav-menu {
+    display: grid;
+    text-align: center;
+    align-content: space-between;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    transition: all 0.25s;
+  }
+  &__nav-items{
+  display: grid; /*flex*/
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Grape Nuts";
+}
+&--link-color{
+  font-size: 48px;
+  text-decoration: none;
+  color: var(--text-color);
+ 
+}
+&:hover{
+   text-shadow: 2px 2px 4px #ffde04;
+  color: var(--hover-color);
+ 
+}
+}

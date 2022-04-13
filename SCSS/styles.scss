@@ -78,19 +78,21 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    &--link-color {
-      text-decoration: none;
-      color: $color-navBar;
-    }
-    &--hover {
-      color: $color-hover;
-    }
-    &--this-page {
-      color: $color-hover;
-    }
-    &--glow {
-      text-shadow: 1px 1px 4px $color-selectedGlow;
-    }
+    color: $color-navBar;
+  }
+}
+.nav-link {
+  color: $color-navBar;
+  text-decoration: none;
+  text-shadow: $font-shadow;
+  &:hover {
+    color: $color-hover;
+    text-shadow: 1px 1px 4px #ffde04;
+  }
+  &--this-page {
+    cursor: default;
+    color: $color-hover;
+    text-shadow: 1px 1px 4px #ffde04;
   }
 }
 

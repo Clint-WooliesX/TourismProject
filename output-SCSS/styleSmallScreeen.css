@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  background-color: #73482f;
+}
+
+.header {
+  display: grid;
+  position: relative;
+  width: 100%;
+}
+.header__hero-img {
+  width: 100%;
+}
+.header__hero-img__title-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+}
+.header__hero-img__title-tag--title {
+  margin-left: 10px;
+  font-size: 10vw;
+  text-shadow: -3px 4px 8px black;
+}
+.header__hero-img__title-tag--tag {
+  display: none;
+}
+
+.burger-wrapper {
+  cursor: pointer;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: 40px;
+  width: 100%;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+}
+.burger-wrapper__hamburger {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 22px;
+  height: 0;
+  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
+}
+.burger-wrapper__nav-menu {
+  display: grid;
+  text-align: center;
+  align-content: space-between;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  transition: all 0.25s;
+}
+.burger-wrapper__nav-items {
+  display: grid;
+  /*flex*/
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Grape Nuts";
+}
+.burger-wrapper--link-color {
+  font-size: 48px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.burger-wrapper:hover {
+  text-shadow: 2px 2px 4px #ffde04;
+  color: var(--hover-color);
+}
