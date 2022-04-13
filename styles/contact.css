@@ -1,21 +1,24 @@
 .form-container {
+  margin-top:0;
   display: flex;
-  justify-content: center;
 }
 
 .contact-form {
+  
   display: grid;
-  grid-template-columns: min-content;
-  width: 75%;
+
+  grid-template-columns: 10% 30% 10% 10% 10% ;
   gap: 10px;
 }
 
 label {
   font-size: 18px;
+  margin-left: 60px;
   font-weight: bold;
   display: grid;
   justify-self: right;
   align-self: center;
+  grid-column-start: 1;
   grid-column-end: 1;
 }
 .message{
@@ -32,7 +35,7 @@ input {
   display: grid;
   height: 32px;
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end:;
 }
 textarea {
   box-shadow: inset -2px 2px 8px black;
@@ -41,14 +44,14 @@ textarea {
   font-size: 18px;
   display: grid;
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 5;
 }
 
 .buttons {
   display: flex;
   justify-content: flex-end;
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 4;
 
   /* margin: 10px; */
 }
@@ -57,7 +60,9 @@ textarea {
 .submit {
   border: 1px solid black;
   border-radius: 15px;
-  padding: 10px;
+  padding: 5px;
+  padding-left:15px;
+  padding-right:15px;
   margin-right: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -70,4 +75,26 @@ textarea {
 .submit:hover {
   background-color: darkgray;
   cursor: pointer;
+}
+
+.log-caption{
+  justify-self: center;
+  padding-top:12px;
+   grid-column-end:5;
+  grid-row: 2 / span 3;
+
+}
+.logo{
+  border-radius: 15px;
+  align-self: center;
+  width:100%;
+  grid-column-end:5;
+  grid-row: 2 / span 3;
+
+}
+
+@media screen and (max-width: 900px){
+  .logo{
+    width:10px;
+  }
 }

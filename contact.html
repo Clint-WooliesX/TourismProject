@@ -48,10 +48,10 @@
 
     <nav id="navigation-bar" class="nav-menu ham-menu ">
       <ul class="nav-items ham-items">
-        <li class="nav-link--this-page ham-link ham-link--thipage ">Overview</li>
+        <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Overview</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Getting here</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/gallery.html">Gallery</a></li>
-        <li><a class="nav-link nav-link:hover ham-link" href="/contact.html">Contact</a></li>
+        <li><a class="nav-link--this-page ham-link ham-link--thipage">Contact</a></li>
       </ul>
     </nav>
 
@@ -59,14 +59,15 @@
       <h3>Contact</h3>
       <div class="form-container">
         <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
-                        <p style="text-align:center; grid-column: 1/span2;">
-                Please complete the form below if you would like to make an enquiry.
-                We will endeavour to respond within 48hrs.
-              </p>
+          <p style="text-align:center; grid-column: 2/ span 3;">
+            Please complete the form below if you would like to make an enquiry.
+            We will endeavour to respond within 48hrs.
+          </p>
           <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
-
           <label for="name">Name:</label>
           <input type="text" name="name" id="name" placeholder="Full name" />
+          <p class="log-caption" >Powered by</p>
+          <img class="logo" src="/images/formsLogo.png" alt="">
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" placeholder="example@domain.com" required />
           <label for="phone">Phone:</label>
@@ -96,7 +97,7 @@
           </p>
         </div>
       </div>
-    
+
       <div class="panel panel--center-text">
         <h3>Coming up</h3>
         <hr class="panel--horizontal-line">
