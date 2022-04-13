@@ -10,17 +10,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
   <!-- google font -->
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/styles/widescreen.css" />
-  <link rel="stylesheet" media="screen and (max-width: 900px)" href="/styles/smallscreen.css" />
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="/output-SCSS/styleSmallScreeen.css" />
   <link rel="stylesheet" href="/styles/footer.css">
-  <link rel="stylesheet" href="/styles/gallery.css" />
-  <script src="/javascript/gallery.js" defer></script>
+  <link rel="stylesheet" href="styles/gallery.css">
+  <script src="/javascript/gallery.js"></script>
   <script src="/javascript/index.js"></script>
   <title>Visit Wisemans Ferry</title>
 </head>
 
-<body>
-  <main class="page-content-grid">
+<body class="body">
+
     <div id="zoomImg" class="zoom-img" onclick="closeImage()" style="display: none">
       <div class="gallery-box">
         <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="sample alt text" onclick="closeImage()" />
@@ -29,31 +29,31 @@
         </div>
       </div>
     </div>
-
-    <header class="banner">
-      <img id="hero-img" src="/images/banner.jpg" alt="" />
-
-      <heading class="page-title-tageline">
-        <h1>Wisemans Ferry</h1>
-        <h2>"Come visit the Hawkesbury"</h2>
+  <main class="main">
+    <header class="header">
+      <img class="header__hero-img" src="/images/banner.jpg" alt="" />
+  
+      <heading class="header__hero-img__title-tag">
+        <h1 class="header__hero-img__title-tag--title">Wisemans Ferry</h1>
+        <h2 class="header__hero-img__title-tag--tag">"Come visit the Hawkesbury"</h2>
       </heading>
     </header>
 
     <nav class="burger-wrapper" onclick="openNav()">
       <h2>Come visit the Hawkesbury</h2>
-      <div class="hamburger"></div>
+      <div class="burger-wrapper__hamburger"></div>
     </nav>
     
-    <nav id="navigation-bar" class="navigation-bar">
-      <ul>
-        <li><a href="/index.html">Overview</a></li>
-        <li><a href="/getting_here.html">Getting here</a></li>
-        <li class="thisPage"><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+    <nav id="navigation-bar" class="nav-menu ham-menu ">
+      <ul class="nav-items ham-items">
+        <li class="nav-link--this-page ham-link ham-link--thipage ">Overview</li>
+        <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Getting here</a></li>
+        <li><a class="nav-link nav-link:hover ham-link" href="/gallery.html">Gallery</a></li>
+        <li><a class="nav-link nav-link:hover ham-link" href="/contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <article>
+    <article class="article">
       <h3>Gallery</h3>
       <br>
       <div class="gallery-grid">
@@ -88,9 +88,9 @@
       </div>
     </article>
 
-    <aside>
-      <div class="coming-up">
-        <div class="ferryHours">
+    <aside class="side-bar">
+      <div class="panel panel--justified-text">
+        <div class="ferryHours ">
           <h3>Ferry hours</h3><br>
           <p>The Webbs Creek Ferry at Wisemans Ferry crosses the Hawkesbury River just south of the junction of the
             Macdonald River.</p><br>
@@ -101,19 +101,20 @@
           </p>
         </div>
       </div>
-      <div class="coming-up">
+    
+      <div class="panel panel--center-text">
         <h3>Coming up</h3>
-        <hr>
+        <hr class="panel--horizontal-line">
         <P>16/4/22 - Tidal mills & Colonial food</P>
-        <hr>
+        <hr class="panel--horizontal-line">
         <P>17/4/22 - Easter egg hunt in the park</P>
-        <hr>
+        <hr class="panel--horizontal-line">
         <P>25/4/22 - ANZAC Day Dawn service</P>
-        <hr>
+        <hr class="panel--horizontal-line">
         <P>13/8/22 - Bark Buster Blitz</P>
-        <hr>
+        <hr class="panel--horizontal-line">
         <P>28/9/22 - Return to rio holloween special</P>
-        <hr>
+        <hr class="panel--horizontal-line">
       </div>
     </aside>
 

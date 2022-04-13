@@ -159,6 +159,8 @@
     max-width: 100%;
     width: 250px;
     &--map {
+      border-radius: 10px;
+    border: 3px solid $color-background;
       max-width: 400px;
       max-height: 400px;
       width: 30vw;
