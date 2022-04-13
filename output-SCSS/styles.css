@@ -145,10 +145,17 @@
   float: right;
 }
 .float-right__image {
+  cursor: zoom-in;
   border-radius: 10px;
   border: 3px solid #73482f;
   max-width: 100%;
   width: 250px;
+}
+.float-right__image--map {
+  max-width: 400px;
+  max-height: 400px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .caption-text {

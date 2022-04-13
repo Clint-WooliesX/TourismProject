@@ -76,11 +76,11 @@
   text-shadow: $font-shadow;
 }
 .nav-items {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    color: $color-navBar;
-  }
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: $color-navBar;
+}
 
 .nav-link {
   color: $color-navBar;
@@ -140,24 +140,30 @@
   @extend %contentShadow;
   background-color: $color-article;
 }
-  .paragraph {
-    padding-left: 60px;
-    padding-right: 60px;
-    max-width: 600px;
-    font-size: 22px;
-    margin-bottom:30px;
-  }
+.paragraph {
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 600px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
 
 .float-right {
   margin: 5px 50px 0 15px;
   float: right;
 
-
   &__image {
+    cursor: zoom-in;
     border-radius: 10px;
     border: 3px solid $color-background;
     max-width: 100%;
     width: 250px;
+    &--map {
+      max-width: 400px;
+      max-height: 400px;
+      width: 30vw;
+      height: 30vw;
+    }
   }
 }
 .caption-text {

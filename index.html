@@ -13,11 +13,24 @@
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="/output-SCSS/styleSmallScreeen.css" />
   <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <script src="/javascript/gallery.js"></script>
   <script src="/javascript/index.js"></script>
   <title>Visit Wisemans Ferry</title>
 </head>
 
 <body class="body">
+
+    <main class="page-content-grid">
+      <div id="zoomImg" class="zoom-img" onclick="closeImage()" style="display: none">
+        <div class="gallery-box">
+          <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="sample alt text" onclick="closeImage()" />
+          <div class="caption-box">
+            <h1 id="galleryCaption" class="gallery-caption">This is a very long caption</h1>
+          </div>
+        </div>
+      </div>
+
   <main class="main">
     <header class="header">
       <img class="header__hero-img" src="/images/banner.jpg" alt="" />
@@ -47,9 +60,9 @@
       <br>
       <div>
         <div class="float-right">
-          <img class="float-right__image" src="/images/ferry.jpg" />
+          <img class="float-right__image" onclick="openImg(this.src,this.alt)" src="/images/ferry.jpg" alt="Ferry crossing the Hawkesbury river"/>
           <br />
-          <div class="caption-text">Hover to enlarge</div>
+          <div class="caption-text">click to enlarge</div>
         </div>
         <p class="paragraph">
           Wisemans Ferry is the oldest ferry crossing still in operation in
@@ -64,8 +77,8 @@
       </div>
       <div>
         <div class="float-right">
-          <img class="float-right__image" src="/images/rockCarving.JPG" />
-          <div class="caption-text">Hover to enlarge</div>
+          <img class="float-right__image" onclick="openImg(this.src,this.alt)" src="/images/rockCarving.JPG" alt="Aboriginal rock carving"/>
+          <div class="caption-text">Click to enlarge</div>
         </div>
         <p class="paragraph">
           Filled with Aboriginal and European history, the area’s heritage
