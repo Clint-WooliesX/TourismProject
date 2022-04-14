@@ -1,19 +1,17 @@
-.form-wrapper{
-  display:flex;
+.form-wrapper {
+  display: flex;
   justify-content: center;
 }
 .form-container {
   display: flex;
-  /* justify-content: center; */
-  margin-top:0;
-  width:80%;
+  margin-top: 0;
+  width: 80%;
   max-width: 90%;
-
 }
 
 .contact-form {
   display: grid;
-  grid-template-columns: min-content ;
+  grid-template-columns: min-content;
   gap: 10px;
 }
 
@@ -21,11 +19,11 @@ label {
   font-size: 18px;
   margin-left: 60px;
   font-weight: bold;
-text-align: right;
+  text-align: right;
   grid-column-start: 1;
   grid-column-end: 1;
 }
-.message{
+.message {
   align-self: flex-start;
 }
 
@@ -49,11 +47,10 @@ textarea {
 }
 
 .buttons {
-  display:flex;
+  display: flex;
   justify-self: right;
-grid-row:6;
-grid-column: 2;
-
+  grid-row: 6;
+  grid-column: 2;
 }
 
 .reset,
@@ -61,16 +58,16 @@ grid-column: 2;
   border: 3px outset black;
   border-radius: 15px;
   padding: 5px;
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-right: 10px;
   font-size: 18px;
   font-weight: bold;
   max-height: min-content;
 }
-.reset:hover{
+.reset:hover {
   background-color: red;
-  color:white
+  color: white;
 }
 
 .submit:hover {
@@ -78,32 +75,23 @@ grid-column: 2;
   cursor: pointer;
 }
 
-.reset:active, .submit:active{
+.reset:active,
+.submit:active {
   box-shadow: inset -4px 4px 4px black;
 }
 
-.log-caption{
-  display:flex;
+.log-caption {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size:12px;
-  padding-top:0;
- grid-row:7;
-grid-column: 1/4;
-
+  font-size: 12px;
+  padding-top: 0;
+  grid-row: 7;
+  grid-column: 1/4;
 }
-.logo{
+.logo {
   border-radius: 15px;
   align-self: center;
-  max-width:150px;
-
-
-
-}
-
-@media screen and (max-width: 900px){
-  .logo{
-    width:60%;
-  }
+width:100px
 }

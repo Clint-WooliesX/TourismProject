@@ -1,18 +1,6 @@
 @import "pallet";
 @import "fonts";
-
-// extends
-%contentShadow {
-  box-shadow: inset -6px 6px 6px $color-dropShadow;
-}
-
-// mixins
-@mixin corners($tl, $tr, $bl, $br) {
-  border-top-left-radius: #{$tl}px;
-  border-top-right-radius: #{$tr}px;
-  border-bottom-left-radius: #{$bl}px;
-  border-bottom-right-radius: #{$br}px;
-}
+@import "mixins";
 
 * {
   margin: 0;
