@@ -19,9 +19,9 @@
 
 <body class="body">
 
-      <div id="zoomImg" class="zoom-img" onclick="closeImage()" style="display: none">
+      <div id="curtain" class="curtain" onclick="closeImage()" style="display: none">
         <div class="gallery-box">
-          <img id="zoomedImage" src="/gallery-images/gallery-img1.JPG" alt="sample alt text" onclick="closeImage()" />
+          <img id="full-size-gallery" class="full-size-gallery" src="/gallery-images/gallery-img1.JPG" alt="sample alt text" onclick="closeImage()" />
           <div class="caption-box">
             <h1 id="galleryCaption" class="gallery-caption">This is a very long caption</h1>
           </div>
@@ -56,8 +56,8 @@
       <h3>Overview</h3>
       <br>
       <div>
-        <div class="float-right">
-          <img class="float-right__image" onclick="openImg(this.src,this.alt)" src="/images/ferry.jpg" alt="Ferry crossing the Hawkesbury river"/>
+        <div class="float-right small-centered">
+          <img class="float-right__image small-centered__image" onclick="openImg(this.src,this.alt)" src="/images/ferry.jpg" alt="Ferry crossing the Hawkesbury river"/>
           <br />
           <div class="caption-text">click to enlarge</div>
         </div>
@@ -73,8 +73,8 @@
         </p>
       </div>
       <div>
-        <div class="float-right">
-          <img class="float-right__image" onclick="openImg(this.src,this.alt)" src="/images/rockCarving.JPG" alt="Aboriginal rock carving"/>
+        <div class="float-right small-centered ">
+          <img class="float-right__image small-centered__image" onclick="openImg(this.src,this.alt)" src="/images/rockCarving.JPG" alt="Aboriginal rock carving"/>
           <div class="caption-text">Click to enlarge</div>
         </div>
         <p class="paragraph">
