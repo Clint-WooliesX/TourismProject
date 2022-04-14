@@ -2,14 +2,17 @@
 @import "fonts";
 
 // extends
-%grid-center {
-  display: grid;
-  align-content: center;
-}
 %contentShadow {
   box-shadow: inset -6px 6px 6px $color-dropShadow;
 }
-// extends
+
+// mixins
+@mixin corners($tl, $tr, $bl, $br) {
+  border-top-left-radius: #{$tl}px;
+  border-top-right-radius: #{$tr}px;
+  border-bottom-left-radius: #{$bl}px;
+  border-bottom-right-radius: #{$br}px;
+}
 
 * {
   margin: 0;
@@ -32,10 +35,8 @@
 .header {
   position: relative;
   grid-column: 1 / span 2;
-
   &__hero-img {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    @include corners(30, 30, 0, 0);
     width: 100%;
   }
 }
@@ -46,17 +47,15 @@
   left: 0;
   font-family: $font-headings;
   color: $color-header;
-
+  text-shadow: $font-shadow;
   &--title {
     margin-left: 40px;
     font-size: calc(100vw * 0.05);
-    text-shadow: $font-shadow;
   }
   &--tag {
     margin-left: 80px;
     font-size: calc(100vw * 0.02);
     margin-bottom: 15px;
-    text-shadow: $font-shadow;
   }
 }
 
@@ -64,13 +63,12 @@
   display: none;
   font-family: $font-headings;
   color: $color-navBar;
-  // this needs looking at//
 }
 
 .nav-menu {
-  @extend %grid-center;
+  display: grid;
   grid-column: 1 / span 2;
-  font-family: "Grape Nuts";
+  font-family: $font-headings;
   font-size: 38px;
   text-shadow: $font-shadow;
 }
@@ -87,12 +85,12 @@
   text-shadow: $font-shadow;
   &:hover {
     color: $color-hover;
-    text-shadow: 1px 1px 4px #ffde04;
+    text-shadow: 2px 2px 4px $color-selectedGlow;
   }
   &--this-page {
     cursor: default;
     color: $color-hover;
-    text-shadow: 1px 1px 4px #ffde04;
+    text-shadow: 2px px 4px $color-selectedGlow;
   }
 }
 
@@ -113,10 +111,9 @@
   width: 100%;
   @extend %contentShadow;
   background-color: $color-article;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 15px;
   overflow: hidden;
-
   &--horizontal-line {
     color: #9fa3a6;
     margin: 10px;
@@ -133,8 +130,7 @@
   display: grid;
   text-align: justify;
   padding: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  @include corners(0, 20, 0, 20);
   font-family: $font-article;
   @extend %contentShadow;
   background-color: $color-article;
@@ -150,15 +146,14 @@
 .float-right {
   margin: 5px 50px 0 15px;
   float: right;
-
   &__image {
     cursor: zoom-in;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 3px solid $color-background;
     max-width: 100%;
     width: 250px;
     &--map {
-      border-radius: 10px;
+      border-radius: 20px;
       border: 3px solid $color-background;
       max-width: 400px;
       max-height: 400px;
@@ -180,15 +175,14 @@
 
 footer {
   display: grid;
-  grid-column: span 2;
   justify-content: center;
+  grid-column: span 2;
   align-items: center;
   text-align: center;
   color: $color-navBar;
   background-color: $color-background;
   height: 150px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  @include corners(0, 0, 30, 30);
 }
 
 .social-icons {
@@ -200,8 +194,8 @@ footer {
 
 .tourismInfo {
   font-size: 24px;
-  font-family: "Grape Nuts";
-  text-shadow: 3px 3px 8px black;
+  font-family: $font-headings;
+  text-shadow: 3px 3px 8px $font-shadow;
   display: grid;
   grid-column: 1 / span 4;
 }
@@ -214,90 +208,3 @@ footer {
   }
 }
 
-// ------------ Gallery ---------------
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: center;
-  gap: 20px;
-}
-
-.gallery-grid img {
-  border-radius: 10px;
-  border: 3px solid $color-background;
-  display: grid;
-  width: 300px;
-  height: 200px;
-  position: relative;
-  top: 0;
-  left: 0;
-  transition: 0.2s;
-  &:hover {
-    position: relative;
-    cursor: zoom-in;
-    top: -10px;
-    left: 10px;
-    box-shadow: -4px 4px 8px 0px $color-dropShadow;
-    transition: 0.2s;
-  }
-}
-
-.curtain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 2;
-}
-
-.full-size-gallery {
-  border-radius: 30px;
-  border: 10px solid $color-background;
-  box-shadow: 16px 16px 32px 10px $color-dropShadow;
-  position: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  max-height: 90vh;
-  max-width: 90vw;
-  z-index: 3;
-  
-  &:hover {
-    cursor: zoom-out;
-  }
-}
-
-.gallery-box {
-  position: relative;
-}
-
-.caption-box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  bottom: 8%;
-  left: 0;
-}
-
-.gallery-caption {
-  display: flex;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 5px;
-  font-family: "Grape Nuts";
-  font-size: 120%;
-  color: #f2c063;
-  text-shadow: 2px 2px 4px black;
-  background-color: #0000008e;
-  border-radius: 120px;
-  border: 1px solid rgba(192, 192, 192, 0.541);
-}

@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
-  <!-- google font -->
+  <!-- media query / stylesheets-->
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="/output-SCSS/styleSmallScreeen.css" />
+  <link rel="stylesheet" href="/output-SCSS/gallery.css">
+  <!-- JavaScript -->
   <script src="/javascript/gallery.js"></script>
   <script src="/javascript/index.js"></script>
   <title>Visit Wisemans Ferry</title>
@@ -29,6 +31,7 @@
       </div>
 
   <main class="main">
+
     <header class="header">
       <img class="header__hero-img" src="/images/banner.jpg" alt="" />
 
@@ -45,7 +48,7 @@
 
     <nav id="navigation-bar" class="nav-menu ham-menu ">
       <ul class="nav-items ham-items">
-        <li class="nav-link--this-page ham-link ham-link--thipage ">Overview</li>
+        <li class="nav-link--this-page ham-link--this-page ">Overview</li>
         <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Getting here</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/gallery.html">Gallery</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/contact.html">Contact</a></li>
@@ -53,7 +56,7 @@
     </nav>
 
     <article class="article ">
-      <h3>Overview</h3>
+      <h3 style="display:none">Overview</h3>
       <br>
       <div>
         <div class="float-right small-centered">
