@@ -12,5 +12,6 @@ window.addEventListener("pageshow", function (event) {
 
 contactForm.addEventListener("submit", function () {
   console.log("show spinner");
+  document.getElementById("curtain").style.display = "flex";
   document.getElementById("spinnerLocation").style.display = "flex";
 });
