@@ -46,8 +46,10 @@
   align-content: center;
   height: 40px;
   width: 100%;
+  font-size: 88%;
   font-family: $font-headings;
   color: $color-header;
+  text-shadow: $font-shadow;
 
   &__hamburger {
     content: "";

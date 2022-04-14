@@ -46,8 +46,10 @@
   align-content: center;
   height: 40px;
   width: 100%;
+  font-size: 88%;
   font-family: "Grape Nuts";
   color: #f2ec94;
+  text-shadow: -3px 4px 8px black;
 }
 .burger-wrapper__hamburger {
   content: "";
