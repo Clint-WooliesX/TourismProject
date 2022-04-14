@@ -6,10 +6,9 @@
   padding: 0;
 }
 
-
 .body {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   background-color: $color-background;
 }
 
@@ -23,12 +22,12 @@
 }
 
 .headings {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-family: $font-headings;
-  color: $color-header;
-
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // font-family: $font-headings;
+  // color: $color-header;
+  // text-shadow: $font-shadow;
   &--title {
     margin-left: 40px;
     font-size: calc(100vw * 0.09);
@@ -72,7 +71,7 @@
   transition: all 0.25s;
 }
 .ham-items {
-  display: grid; 
+  display: grid;
   justify-content: space-around;
   list-style: none;
   font-family: "Grape Nuts";
@@ -91,52 +90,59 @@
     color: $color-hover;
   }
 }
-.article {
-  display: grid;
-  text-align: justify;
-  padding: 20px;
-  font-family: $font-article;
-  @extend %contentShadow;
-  background-color: $color-article;
-}
-.paragraph {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 600px;
-  font-size: 22px;
-  margin-bottom: 30px;
-}
 
 .side-bar {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
   font-size: 95%;
-  background: $font-article;
+  // background: $font-article;
 }
-.panel {
-  font-family: $font-article;
-  width: 40%;
-  @extend %contentShadow;
-  background-color: $color-article;
-  border-radius: 30px;
-  margin-top: 15px;
-  padding: 15px;
-  overflow: hidden;
 
-  &--horizontal-line {
-    color: #9fa3a6;
-    margin: 10px;
-  }
-  &--justified-text {
-    text-align: justify;
-  }
-  &--center-text {
-    text-align: center;
-  }
+.panel {
+  // font-family: $font-article;
+  width: 40%;
+  // @extend %contentShadow;
+  // background-color: $color-article;
+  // border-radius: 30px;
+  margin-top: 15px;
+  // padding: 15px;
+  // overflow: hidden;
+  // &--horizontal-line {
+  //   color: #9fa3a6;
+  //   margin: 10px;
+  // }
+  // &--justified-text {
+  //   text-align: justify;
+  // }
+  // &--center-text {
+  //   text-align: center;
+  // }
 }
+
+.article {
+  // display: grid;
+  // text-align: justify;
+  // padding: 20px;
+  font-family: $font-article;
+  // @extend %contentShadow;
+  // background-color: $color-article;
+}
+
+// h3 {
+//   text-align: center;
+// }
+
+.paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  // max-width: 600px;
+  // font-size: 22px;
+  // margin-bottom: 30px;
+}
+
 .caption-text {
   display: none;
 }
@@ -150,6 +156,10 @@
     max-width: 100%;
   }
 }
+
+
+
+
 .small-map {
   display: flex;
   border-radius: 20px;
@@ -162,42 +172,40 @@
 
 // ------------ footer ---------------
 
-footer {
-  display: grid;
-  grid-column: span 2;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: $color-navBar;
-  background-color: $color-background;
-  height: 150px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
+// footer {
+//   display: grid;
+//   grid-column: span 2;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   color: $color-navBar;
+//   background-color: $color-background;
+//   height: 150px;
+//   border-bottom-left-radius: 30px;
+//   border-bottom-right-radius: 30px;
+// }
 
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  row-gap: 10px;
-  column-gap: 15px;
-}
+// .social-icons {
+//   display: grid;
+//   grid-template-columns: repeat(4, auto);
+//   row-gap: 10px;
+//   column-gap: 15px;
+// }
 
-.tourismInfo {
-  font-size: 24px;
-  font-family: "Grape Nuts";
-  text-shadow: 3px 3px 8px black;
-  display: grid;
-  grid-column: 1 / span 4;
-}
+// .tourismInfo {
+//   font-size: 24px;
+//   font-family: "Grape Nuts";
+//   text-shadow: 3px 3px 8px black;
+//   display: grid;
+//   grid-column: 1 / span 4;
+// }
 
-.socials {
-  display: grid;
-  width: 42px;
-  &:hover {
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
-  }
-}
-  
-h3{
-  text-align: center;
-}
+// .socials {
+//   display: grid;
+//   width: 42px;
+//   &:hover {
+//     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
+//   }
+// }
+
+

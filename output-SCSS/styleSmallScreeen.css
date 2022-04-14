@@ -1,15 +1,9 @@
-.panel, .article {
-  box-shadow: inset -6px 6px 6px #000000;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
 .body {
-  display: flex;
-  justify-content: center;
   background-color: #73482f;
 }
 
@@ -22,13 +16,6 @@
   width: 100%;
 }
 
-.headings {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-family: "Grape Nuts";
-  color: #f2ec94;
-}
 .headings--title {
   margin-left: 40px;
   font-size: 9vw;
@@ -92,12 +79,20 @@
   color: #f2ec94;
 }
 
+.side-bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  font-size: 95%;
+}
+
+.panel {
+  width: 40%;
+  margin-top: 15px;
+}
+
 .article {
-  display: grid;
-  text-align: justify;
-  padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
 }
 
 .paragraph {
@@ -105,37 +100,6 @@
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 600px;
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.side-bar {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
-  font-size: 95%;
-  background: Arial, Helvetica, sans-serif;
-}
-
-.panel {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 40%;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  margin-top: 15px;
-  padding: 15px;
-  overflow: hidden;
-}
-.panel--horizontal-line {
-  color: #9fa3a6;
-  margin: 10px;
-}
-.panel--justified-text {
-  text-align: justify;
-}
-.panel--center-text {
-  text-align: center;
 }
 
 .caption-text {
@@ -161,44 +125,4 @@
   max-height: 400px;
   width: 100vw;
   height: 100vw;
-}
-
-footer {
-  display: grid;
-  grid-column: span 2;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #f2c063;
-  background-color: #73482f;
-  height: 150px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  row-gap: 10px;
-  column-gap: 15px;
-}
-
-.tourismInfo {
-  font-size: 24px;
-  font-family: "Grape Nuts";
-  text-shadow: 3px 3px 8px black;
-  display: grid;
-  grid-column: 1/span 4;
-}
-
-.socials {
-  display: grid;
-  width: 42px;
-}
-.socials:hover {
-  filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
-}
-
-h3 {
-  text-align: center;
 }
