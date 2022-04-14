@@ -198,3 +198,7 @@ footer {
 .socials:hover {
   filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
 }
+
+h3 {
+  text-align: center;
+}

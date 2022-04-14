@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+.h3 {
+  display: none;
+}
+
 .body {
   display: flex;
   justify-content: center;
