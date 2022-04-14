@@ -17,6 +17,7 @@
   grid-column: 1/span 2;
 }
 .header__hero-img {
+  border-bottom: 1px solid black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 0px;

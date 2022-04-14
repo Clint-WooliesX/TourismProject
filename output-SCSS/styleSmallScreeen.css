@@ -13,6 +13,7 @@
   width: 100%;
 }
 .header__hero-img {
+  border-bottom: 1px solid black;
   width: 100%;
 }
 

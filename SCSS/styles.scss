@@ -24,6 +24,7 @@
   position: relative;
   grid-column: 1 / span 2;
   &__hero-img {
+     border-bottom: 1px solid black;
     @include corners(30, 30, 0, 0);
     width: 100%;
   }
