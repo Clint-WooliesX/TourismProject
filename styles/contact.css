@@ -1,13 +1,19 @@
+.form-wrapper{
+  display:flex;
+  justify-content: center;
+}
 .form-container {
-  margin-top:0;
   display: flex;
+  /* justify-content: center; */
+  margin-top:0;
+  width:80%;
+  max-width: 90%;
+
 }
 
 .contact-form {
-  
   display: grid;
-
-  grid-template-columns: 10% 30% 10% 10% 10% ;
+  grid-template-columns: min-content ;
   gap: 10px;
 }
 
@@ -15,9 +21,7 @@ label {
   font-size: 18px;
   margin-left: 60px;
   font-weight: bold;
-  display: grid;
-  justify-self: right;
-  align-self: center;
+text-align: right;
   grid-column-start: 1;
   grid-column-end: 1;
 }
@@ -26,6 +30,7 @@ label {
 }
 
 input {
+  max-width: 60%;
   border: 1px solid black;
   box-shadow: inset -2px 2px 8px black;
   border-radius: 15px;
@@ -34,26 +39,20 @@ input {
   font-size: 18px;
   display: grid;
   height: 32px;
-  grid-column-start: 2;
-  grid-column-end:;
 }
 textarea {
+  max-width: 100%;
   box-shadow: inset -2px 2px 8px black;
   border-radius: 15px;
   padding: 10px;
   font-size: 18px;
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 5;
 }
 
 .buttons {
-  display: flex;
-  justify-content: flex-end;
-  grid-column-start: 4;
-  grid-column-end: 4;
-
-  /* margin: 10px; */
+  display:flex;
+  justify-self: right;
+grid-row:6;
+grid-column: 2;
 }
 
 .reset,
@@ -78,16 +77,21 @@ textarea {
 }
 
 .log-caption{
-  justify-self: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   padding-top:12px;
    grid-column-end:5;
   grid-row: 2 / span 3;
 
 }
 .logo{
+
+
   border-radius: 15px;
   align-self: center;
-  width:100%;
+  width:60%;
   grid-column-end:5;
   grid-row: 2 / span 3;
 
@@ -95,6 +99,6 @@ textarea {
 
 @media screen and (max-width: 900px){
   .logo{
-    width:10px;
+    width:60%;
   }
 }

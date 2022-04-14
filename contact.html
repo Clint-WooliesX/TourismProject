@@ -34,10 +34,10 @@
   <main class="main">
     <header class="header">
       <img class="header__hero-img" src="/images/banner.jpg" alt="" />
-
-      <heading class="header__hero-img__title-tag">
-        <h1 class="header__hero-img__title-tag--title">Wisemans Ferry</h1>
-        <h2 class="header__hero-img__title-tag--tag">"Come visit the Hawkesbury"</h2>
+    
+      <heading class="headings">
+        <h1 class="headings--title">Wisemans Ferry</h1>
+        <h2 class="headings--tag ">"Come visit the Hawkesbury"</h2>
       </heading>
     </header>
 
@@ -57,17 +57,20 @@
 
     <article class="article ">
       <h3>Contact</h3>
+      <div class="form-wrapper">
       <div class="form-container">
         <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
-          <p style="text-align:center; grid-column: 2/ span 3;">
+          <p style="text-align:center; grid-column: 1/ span 3;">
             Please complete the form below if you would like to make an enquiry.
             We will endeavour to respond within 48hrs.
           </p>
           <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
           <label for="name">Name:</label>
           <input type="text" name="name" id="name" placeholder="Full name" />
+          <!-- <div class="log-caption">
           <p class="log-caption" >Powered by</p>
           <img class="logo" src="/images/formsLogo.png" alt="">
+          </div> -->
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" placeholder="example@domain.com" required />
           <label for="phone">Phone:</label>

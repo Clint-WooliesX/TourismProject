@@ -28,28 +28,30 @@
   border-radius: 30px;
   background-color: #73482f;
 }
-.body .header {
+
+.header {
   position: relative;
   grid-column: 1/span 2;
 }
-.body .header__hero-img {
+.header__hero-img {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   width: 100%;
 }
-.body .header__hero-img__title-tag {
+
+.headings {
   position: absolute;
   bottom: 0;
   left: 0;
   font-family: "Grape Nuts";
   color: #f2ec94;
 }
-.body .header__hero-img__title-tag--title {
+.headings--title {
   margin-left: 40px;
   font-size: 5vw;
   text-shadow: -3px 4px 8px black;
 }
-.body .header__hero-img__title-tag--tag {
+.headings--tag {
   margin-left: 80px;
   font-size: 2vw;
   margin-bottom: 15px;
@@ -167,4 +169,125 @@
   color: #9fa3a6;
   font-size: 14px;
   text-align: center;
+}
+
+footer {
+  display: grid;
+  grid-column: span 2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2c063;
+  background-color: #73482f;
+  height: 150px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 10px;
+  column-gap: 15px;
+}
+
+.tourismInfo {
+  font-size: 24px;
+  font-family: "Grape Nuts";
+  text-shadow: 3px 3px 8px black;
+  display: grid;
+  grid-column: 1/span 4;
+}
+
+.socials {
+  display: grid;
+  width: 42px;
+}
+.socials:hover {
+  filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-grid img {
+  border-radius: 10px;
+  border: 3px solid #73482f;
+  display: grid;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+.gallery-grid img:hover {
+  position: relative;
+  cursor: zoom-in;
+  top: -10px;
+  left: 10px;
+  box-shadow: -4px 4px 8px 0px #000000;
+  transition: 0.2s;
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.full-size-gallery {
+  border-radius: 30px;
+  border: 10px solid #73482f;
+  box-shadow: 16px 16px 32px 10px #000000;
+  position: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 90vh;
+  max-width: 90vw;
+  z-index: 3;
+}
+.full-size-gallery:hover {
+  cursor: zoom-out;
+}
+
+.gallery-box {
+  position: relative;
+}
+
+.caption-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  bottom: 8%;
+  left: 0;
+}
+
+.gallery-caption {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  font-family: "Grape Nuts";
+  font-size: 120%;
+  color: #f2c063;
+  text-shadow: 2px 2px 4px black;
+  background-color: rgba(0, 0, 0, 0.5568627451);
+  border-radius: 120px;
+  border: 1px solid rgba(192, 192, 192, 0.541);
 }
