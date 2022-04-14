@@ -9,3 +9,8 @@ window.addEventListener("pageshow", function (event) {
     window.location.reload();
   }
 });
+
+contactForm.addEventListener("submit", function () {
+  console.log("show spinner");
+  document.getElementById("spinnerLocation").style.display = "flex";
+});
