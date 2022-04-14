@@ -21,6 +21,7 @@
   background-color: #516673;
 }
 .body .main {
+  border: 2px solid black;
   display: grid;
   grid-template-columns: auto 250px;
   margin: 20px 10px 20px 10px;
@@ -210,4 +211,12 @@ footer {
 }
 .socials:hover {
   filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
+}
+
+.page-title {
+  display: none;
+}
+
+h3 {
+  text-align: center;
 }

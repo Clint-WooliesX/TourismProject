@@ -27,8 +27,10 @@
   display: flex;
   justify-content: center;
   background-color: $color-bodyMargin;
+  
 
   .main {
+    border:2px solid black;
     display: grid;
     grid-template-columns: auto 250px;
     margin: 20px 10px 20px 10px;
@@ -212,3 +214,9 @@ footer {
   }
 }
 
+.page-title{
+  display:none;
+}
+h3{
+  text-align: center;
+}
