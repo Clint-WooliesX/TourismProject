@@ -14,18 +14,7 @@
   border-bottom-right-radius: #{$br}px;
 }
 
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .h3 {
-//   display: none;
-// }
-
 .body {
-  // display: flex;
-  // justify-content: center;
   background: rgb(177, 186, 192);
   background: linear-gradient(
     180deg,
@@ -53,12 +42,6 @@
 }
 
 .headings {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // font-family: $font-headings;
-  // color: $color-header;
-  // text-shadow: $font-shadow;
   &--title {
     margin-left: 40px;
     font-size: calc(100vw * 0.05);
@@ -114,50 +97,18 @@
   width: 180px;
   margin: 0 20px 0 20px;
   font-size: 95%;
-  // background: $font-article;
 }
 
-// .panel {
-//   font-family: $font-article;
-//   width: 100%;
-//   @extend %contentShadow;
-//   background-color: $color-article;
-//   border-radius: 30px;
-//   padding: 15px;
-//   overflow: hidden;
-//   &--horizontal-line {
-//     color: #9fa3a6;
-//     margin: 10px;
-//   }
-//   &--justified-text {
-//     text-align: justify;
-//   }
-//   &--center-text {
-//     text-align: center;
-//   }
-// }
-
 .article {
-  // display: grid;
-  // text-align: justify;
-  // padding: 20px;
   @include corners(0, 20, 0, 20);
   font-family: $font-article;
-  // @extend %contentShadow;
-  // background-color: $color-article;
 }
 .page-title {
   display: none;
 }
-// h3 {
-//   text-align: center;
-// }
 .paragraph {
   padding-left: 60px;
   padding-right: 60px;
-  // max-width: 600px;
-  // font-size: 22px;
-  // margin-bottom: 30px;
 }
 
 .float-right {
@@ -180,7 +131,6 @@
   }
 }
 
-
 .caption-text {
   text-align: center;
   padding-bottom: 15px;
@@ -189,42 +139,3 @@
   font-size: 14px;
   text-align: center;
 }
-
-// ------------ footer ---------------
-
-// footer {
-//   display: grid;
-//   justify-content: center;
-//   grid-column: span 2;
-//   align-items: center;
-//   text-align: center;
-//   color: $color-navBar;
-//   background-color: $color-background;
-//   height: 150px;
-//   @include corners(0, 0, 30, 30);
-// }
-
-// .social-icons {
-//   display: grid;
-//   grid-template-columns: repeat(4, auto);
-//   row-gap: 10px;
-//   column-gap: 15px;
-// }
-
-// .tourismInfo {
-//   font-size: 24px;
-//   font-family: $font-headings;
-//   text-shadow: 3px 3px 8px $font-shadow;
-//   display: grid;
-//   grid-column: 1 / span 4;
-// }
-
-// .socials {
-//   display: grid;
-//   width: 42px;
-//   &:hover {
-//     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
-//   }
-// }
-
-
