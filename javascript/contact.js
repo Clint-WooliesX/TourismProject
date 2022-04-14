@@ -1,6 +1,6 @@
 // free html form submission does not allow redirects on free plans and simply 
-// navigats "back" after successful form submission. bellow code forces a page 
-// refresh using an event listner when the page is traversed using "back"
+// navigates "back" after successful form submission. bellow code forces a page 
+// refresh using an event listener when the page is traversed using "back"
 
 window.addEventListener("pageshow", function (event) {
   var historyTraversal = event.persisted;

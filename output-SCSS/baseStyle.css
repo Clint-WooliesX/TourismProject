@@ -42,7 +42,7 @@
   margin: 10px;
 }
 .panel--justified-text {
-  text-align: justify;
+  text-align: left;
 }
 .panel--center-text {
   text-align: center;
