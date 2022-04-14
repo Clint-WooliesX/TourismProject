@@ -12,8 +12,6 @@
   <!-- google font -->
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
   <link rel="stylesheet" media="screen and (max-width: 900px)" href="/output-SCSS/styleSmallScreeen.css" />
-  <link rel="stylesheet" href="/styles/footer.css">
-  <link rel="stylesheet" href="styles/gallery.css">
   <link rel="stylesheet" href="/styles/contact.css">
   <script src="/javascript/gallery.js"></script>
   <script src="/javascript/index.js"></script>
@@ -34,7 +32,7 @@
   <main class="main">
     <header class="header">
       <img class="header__hero-img" src="/images/banner.jpg" alt="" />
-    
+
       <heading class="headings">
         <h1 class="headings--title">Wisemans Ferry</h1>
         <h2 class="headings--tag ">"Come visit the Hawkesbury"</h2>
@@ -56,34 +54,40 @@
     </nav>
 
     <article class="article ">
-      <h3>Contact</h3>
+      <h3 style="display:none">Contact</h3>
       <div class="form-wrapper">
-      <div class="form-container">
-        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
-          <p style="text-align:center; grid-column: 1/ span 3;">
-            Please complete the form below if you would like to make an enquiry.
-            We will endeavour to respond within 48hrs.
-          </p>
-          <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Full name" />
-          <!-- <div class="log-caption">
+        <div class="form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+            <p style="text-align:center; grid-column: 1/ span 3;">
+              Please complete the form below if you would like to make an enquiry.
+              We will endeavour to respond within 48hrs.
+            </p>
+            <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Full name" />
+            <!-- <div class="log-caption">
           <p class="log-caption" >Powered by</p>
           <img class="logo" src="/images/formsLogo.png" alt="">
           </div> -->
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="example@domain.com" required />
-          <label for="phone">Phone:</label>
-          <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678" />
-          <label class="message" for="message">Message:</label>
-          <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
-          <div class="buttons">
-            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-            <button type="reset" value="Reset" class="reset">Reset</button>
-            <button type="submit" value="Submit" class="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@domain.com" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678" />
+            <label class="message" for="message">Message:</label>
+            <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
+            <div class="buttons">
+
+              <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+              <button type="reset" value="Reset" class="reset">Reset</button>
+              <button type="submit" value="Submit" class="submit">Submit</button>
+
+            </div>
+            <div class="log-caption">
+              <p class="log-caption">Powered by</p>
+              <img class="logo" src="/images/formsLogo.png" height="50%" height="50%" alt="">
+            </div>
+          </form>
+        </div>
     </article>
 
 
