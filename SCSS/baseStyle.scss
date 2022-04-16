@@ -88,7 +88,7 @@ footer {
 .tourismInfo {
   font-size: 24px;
   font-family: $font-headings;
-  text-shadow: 3px 3px 8px $shadow-text;
+  text-shadow: $shadow-text;
   display: grid;
   grid-column: 1 / span 4;
 }

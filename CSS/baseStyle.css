@@ -85,7 +85,7 @@ footer {
 .tourismInfo {
   font-size: 24px;
   font-family: "Grape Nuts";
-  text-shadow: 3px 3px 8px -3px 4px 8px black;
+  text-shadow: -3px 4px 8px black;
   display: grid;
   grid-column: 1/span 4;
 }
