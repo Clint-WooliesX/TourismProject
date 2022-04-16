@@ -134,7 +134,6 @@ textarea {
 
   .contact-form {
     display: flex;
-    justify-content: left;
     flex-direction: column;
     max-width: 100%;
     padding: 0;
@@ -149,22 +148,23 @@ textarea {
   }
 
   input {
-    max-width: 95%;
+    max-width: 90%;
     border: 1px solid black;
     box-shadow: inset -2px 2px 8px black;
     border-radius: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
     display: grid;
     height: 32px;
   }
 
   textarea {
-    max-width: 95%;
+    margin: auto;
+    max-width: 90%;
     box-shadow: inset -2px 2px 8px black;
     border-radius: 15px;
-    padding: 0px;
+    padding: 10px;
     font-size: 18px;
   }
 

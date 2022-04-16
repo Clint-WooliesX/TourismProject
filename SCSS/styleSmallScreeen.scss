@@ -16,7 +16,7 @@
   position: relative;
   width: 100%;
   &__hero-img {
-     border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
     width: 100%;
   }
 }
@@ -87,13 +87,16 @@
 
 .side-bar {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  width: 90vw;
   width: 100vw;
   font-size: 95%;
+  margin: auto;
 }
 
 .panel {
-  width: 40%;
+  align-self: center;
+  width: 60vw;
   margin-top: 15px;
 }
 
