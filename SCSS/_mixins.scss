@@ -20,7 +20,7 @@
     top: #{$v}px;
     left: #{$h}px;
     @if $shadow == filter {
-      filter: drop-shadow(-3px 3px 8px rgba(0, 0, 0, 1));
+      filter: $filter-shadow
     } @else {
       box-shadow: $shadow-hover;
     }
