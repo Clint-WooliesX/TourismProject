@@ -24,9 +24,11 @@ A combination CSS styles have been used to create the responsive layout:
 	- The flex and grid layout automatically arrange content on the page
 1. Media query
 	- a media query loads the appropriate stylesheet when the page loads for screens of 900px and below and 901px and above.
+
 `<link rel="stylesheet" href="CSS/baseStyle.css">`
 `<link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />`
 `<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />`
+
 		- baseStyle.css contains all the common styling
 		- styles.css contains all unique styling for >901px
 		- styleSmallScreen.css contains all unique styling for <900px
@@ -74,7 +76,7 @@ Some light Javascript use has been used to extend functionality of the site. I h
 	* Obtaining element properties for various uses
 
 
-###Theme and design:
+### Theme and design:
 - A color pellet was devised by uploading the hero image at top of page into https://color.adobe.com/create/color-wheel.
 - the pallet is stored in variables with logical names to allow for quick changing the theme rapidly without having to edit the entire style sheets, only the variable stored in _pallet.scss.
 - The layout design was devised to best demonstrate my acquired knowledge of the block/flex and grid layout systems to create a responsive layout with minimal code.
@@ -92,7 +94,7 @@ Some light Javascript use has been used to extend functionality of the site. I h
  	- Site tested on 5k monitor, 15" and 11" laptops, 10"tablet and 6"mobile.
  		-mobile and tablet test in both portrait, landscape and split screen.
 
-##Gallery Page:
+## Gallery Page:
 The gallery page is a responsive grid layout that can adjust to any screen size.
 
 hover animations and the mouse cursor changing to the zoom-in pointer denote the gallery image can be opened.
