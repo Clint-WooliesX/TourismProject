@@ -12,10 +12,10 @@ Create a working tourism website
 
 ### Development process:
 
-- established the subject matter to be Wisemans ferry
-- thought about the MVP criteria and how I would implement that into the site
-- I decided heavy use of grids wot layout the site would demonstrate the aquired knowledge
-- I sketched by hand with pen and paper how I wanted the site to look both on dekstop and mobile device
+- established the subject matter to be Wisemans ferry.
+- thought about the MVP criteria and how I would implement that into the site.
+- I decided heavy use of grids to layout the site would demonstrate the acquired knowledge
+- I sketched by hand with pen and paper how I wanted the site to look both on desktop and mobile device
 - I began gathering the resources for the site images text snippets etc.
 - structured all the HTML in such away that I could apply the CSS to style the site for both mobile and desktop as well as apply any style sheet to test different layouts and designs.
 
@@ -23,7 +23,7 @@ Create a working tourism website
 
 ### Responsive layout to suite screens of all sizes:
 
-A combination CSS styles have been used to create the responsive layout:
+A combination of techniques have been used to create the responsive layout:
 
 1. Flex/grid
    - The flex and grid layout automatically arrange content on the page
@@ -39,6 +39,7 @@ A combination CSS styles have been used to create the responsive layout:
 - baseStyle.css contains all the common styling
 - styles.css contains all unique styling for >901px
 - styleSmallScreen.css contains all unique styling for <900px
+- Other page specific stylesheets are also combined with base and screen size sheets.
 
 1. Javascript
    - Hides/shows the horizontal navigation menu
@@ -46,7 +47,7 @@ A combination CSS styles have been used to create the responsive layout:
 
 ### SASS generated CSS style sheets:
 
-- SCSS style sheets have been used
+- SCSS stylesheets have been used
 - BEM naming convention used for Block, elements and modifiers
 - I have made use of
   - Variables
@@ -120,15 +121,15 @@ replaces 13 lines of code
 - A color pellet was devised by uploading the hero image at top of page into https://color.adobe.com/create/color-wheel.
 - the pallet is stored in variables with logical names to allow for quick changing the theme rapidly without having to edit the entire style sheets, only the variable stored in \_pallet.scss.
 - The layout design was devised to best demonstrate my acquired knowledge of the block/flex and grid layout systems to create a responsive layout with minimal code.
-- As the page is resized all content on the page logical shifts around to make best use of the screen space.
+- As the page is resized all content on the page logically shifts around to make best use of the screen space.
 - when the page gets below 900px where the horizontal nav bar becomes crowded the following happens.
   - Horizontal nav bar is hidden.
   - the right side bar is moved to below the content and changes to a side-by-side layout instead of above and below.
   - The body Margins are set to 0px and the rounded borders turned off.
-  - the Article panel's switched to 100% screen width.
+  - the Article panel is switched to 100% screen width.
   - a Hamburger bar replaces the nav bar.
   - A flyout dropdown contains the page headings.
-  - as the nav bar is now hidden page titles are turn on in the article panel to denote the pages subject.
+  - as the nav bar is now hidden page titles are turned on in the article panel to denote the pages subject.
   - Many other visual tweaks to make best use of screen space.
   - only 2 media queries are needed due to use of block, flex, grid and css.
   - Site tested on 5k monitor, 15" and 11" laptops, 10"tablet and 6"mobile.
