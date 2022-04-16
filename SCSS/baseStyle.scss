@@ -29,7 +29,7 @@
   font-family: $font-article;
   width: 100%;
   @extend %contentShadow;
-  background-color: $color-article;
+  background-color: $color-infoPanels;
   border-radius: 30px;
   padding: 15px;
   overflow: hidden;
@@ -96,5 +96,5 @@ footer {
 .socials {
   display: grid;
   width: 42px;
-  @include hoverMovement(200,pointer,-5,5,filter);
+  @include hoverMovement(200,pointer,-5,5,box);
 }

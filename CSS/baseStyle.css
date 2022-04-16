@@ -6,6 +6,10 @@
   box-shadow: inset -6px 6px 6px #000000;
 }
 
+.socials:hover {
+  box-shadow: -4px 4px 8px #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +36,7 @@
 .panel {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #b4b4b4;
   border-radius: 30px;
   padding: 15px;
   overflow: hidden;
@@ -109,5 +113,4 @@ footer {
   cursor: pointer;
   top: -5px;
   left: 5px;
-  filter: drop-shadow(-3px 3px 8px rgb(0, 0, 0));
 }
