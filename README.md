@@ -54,14 +54,35 @@ A combination CSS styles have been used to create the responsive layout:
   - Mixins
   - @if and @else statements
 
-Examples of mixins I created:
-hoverMovement() is used for mouse over effects it takes 5 arguments
+####Examples of mixins I created:
 
+hoverMovement() is used for mouse over effects it takes 5 arguments
 - time in ms animation transition
 - cursor - sets mouse pointer
 - Vertical movement px
 - Horizontal movement px
 - shadow type - filter or box
+
+~~~
+@mixin hoverMovement($time, $cursor, $v, $h, $shadow) {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: #{$time}ms;
+  &:hover {
+    position: relative;
+    cursor: #{$cursor};
+    top: #{$v}px;
+    left: #{$h}px;
+    @if $shadow == filter {
+      filter: $filter-shadow
+    } @else {
+      box-shadow: $shadow-hover;
+    }
+  }
+~~~
+
+
   Example: hoverMovement(250,pointer,-10,10,filter)
   replaces 13 lines of code
   ![](/hoverEffect.png)
@@ -74,6 +95,7 @@ corners() is used for quick setting of corner radiuses where 3 or less corners o
 - bottom right in px
   example: @include corners(20,10,30,5) replaces 4 lines of code
   ![](/corners.png)
+
   ###Use of Java script:
   Some light Javascript use has been used to extend functionality of the site. I have used:
 - Event listeners:
