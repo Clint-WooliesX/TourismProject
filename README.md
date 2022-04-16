@@ -57,13 +57,14 @@ A combination CSS styles have been used to create the responsive layout:
 ####Examples of mixins I created:
 
 hoverMovement() is used for mouse over effects it takes 5 arguments
+
 - time in ms animation transition
 - cursor - sets mouse pointer
 - Vertical movement px
 - Horizontal movement px
 - shadow type - filter or box
 
-~~~
+```
 @mixin hoverMovement($time, $cursor, $v, $h, $shadow) {
   position: relative;
   top: 0;
@@ -80,12 +81,10 @@ hoverMovement() is used for mouse over effects it takes 5 arguments
       box-shadow: $shadow-hover;
     }
   }
-~~~
+```
 
-
-  Example: hoverMovement(250,pointer,-10,10,filter)
-  replaces 13 lines of code
-  ![](/hoverEffect.png)
+Example: hoverMovement(250,pointer,-10,10,filter)
+replaces 13 lines of code
 
 corners() is used for quick setting of corner radiuses where 3 or less corners or different radius sizes per corner are used. t takes 4 arguments
 
@@ -94,9 +93,17 @@ corners() is used for quick setting of corner radiuses where 3 or less corners o
 - bottom left in px
 - bottom right in px
   example: @include corners(20,10,30,5) replaces 4 lines of code
-  ![](/corners.png)
 
-  ###Use of Java script:
+  ```
+  @mixin corners($tl, $tr, $bl, $br) {
+  border-top-left-radius: #{$tl}px;
+  border-top-right-radius: #{$tr}px;
+  border-bottom-left-radius: #{$bl}px;
+  border-bottom-right-radius: #{$br}px;
+  }
+  ```
+
+  ### Use of Java script:
   Some light Javascript use has been used to extend functionality of the site. I have used:
 - Event listeners:
   - Window resize
@@ -128,23 +135,32 @@ corners() is used for quick setting of corner radiuses where 3 or less corners o
     -mobile and tablet test in both portrait, landscape and split screen.
 
 ## Gallery Page:
-
-The gallery page is a responsive grid layout that can adjust to any screen size.
-
-hover animations and the mouse cursor changing to the zoom-in pointer denote the gallery image can be opened.
-
-clicking an image opens it to the largest size capable of being displayed up to 800x600px
-
-the window has a black tint added and the image opened in the center of the display.
-
-links to the images are not hard coded. Java script is used to send the src value of the thumbnail clicked to a function that opens the correct image.
-
-the Alt text is also sent to the function to display as a caption on the image.
-
-once opened the mouse pointer changes to the zoom-out pointer and clicking closes the image
-
-if images are moved deleted or renamed nothing breaks and the gallery will continue to work.
-
-the gallery has been implemented on other pages of the site to to open images in a larger view.
+- The gallery page is a responsive grid layout that can adjust to any screen size.
+- Hover animations and the mouse cursor changing to the zoom-in pointer denote the gallery image can be opened.
+- Clicking an image opens it to the largest size capable of being displayed up to 800x600px.
+- The window has a black tint added and the image opened in the center of the display.
+- Links to the images are not hard coded. Java script is used to send the src value of the thumbnail clicked to a function that opens the correct image.
+- The Alt text is also sent to the function to display as a caption on the image.
+- Once opened the mouse pointer changes to the zoom-out pointer and clicking closes the image.
+- If images are moved deleted or renamed nothing breaks and the gallery will continue to work.
+- The gallery has been implemented on other pages of the site to to open images in a larger view.
 
 ## Contact page:
+- HTML form collects the input from the user.
+- Hosted server processes the input and emails the submission.
+- HTML/CSS animation tells the user the submission is being handled if the server is slow to respond.
+- Once successfully submitted the user is shown a success page and an option to "Go back".
+- A Javascript event listener detects a "back" page traversal and triggers a refresh of the page to clear the form. (this was a work around required as custom success redirects are not allowed on the free plan).
+
+# What I learnt creating this site.
+It was fun putting what I have learnt in to practice to create this website.
+
+One of the most valuable lessons I learned was use of git, github and version control.
+
+Early on I made several commits without branching first and later realized I had broken my responsive layout and had no idea at what point it had happened.
+
+I was able to checkout to an earlier commit where everything was working and then dig through my code to find my mistake and then merge my work back into the last good working commit.
+
+After this early mistake I followed a strict process of branching before making any major changes and while working on several features at once before merging after testing back into my main branch.
+
+
