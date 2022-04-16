@@ -1,6 +1,7 @@
 // ------------ Gallery ---------------
 @import "fonts";
 @import "pallet";
+@import "_mixins";
 
 .gallery-grid {
   display: grid;
@@ -15,18 +16,7 @@
   display: grid;
   width: 300px;
   height: 200px;
-  position: relative;
-  top: 0;
-  left: 0;
-  transition: 0.2s;
-  &:hover {
-    position: relative;
-    cursor: zoom-in;
-    top: -10px;
-    left: 10px;
-    box-shadow: -4px 4px 8px 0px $color-dropShadow;
-    transition: 0.2s;
-  }
+@include hoverMovement(200,zoom-in,-5,5,box);
 }
 
 .curtain {

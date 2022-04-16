@@ -3,10 +3,34 @@
   box-shadow: inset -6px 6px 6px $color-dropShadow;
 }
 
+%hoverShadow {
+  box-shadow: -4px 4px 8px $color-dropShadow;
+}
+
+
+
 // mixins
 @mixin corners($tl, $tr, $bl, $br) {
   border-top-left-radius: #{$tl}px;
   border-top-right-radius: #{$tr}px;
   border-bottom-left-radius: #{$bl}px;
   border-bottom-right-radius: #{$br}px;
+}
+
+@mixin hoverMovement($time,$cursor,$v,$h,$shadow){
+    position: relative;
+  top: 0;
+  left: 0;
+  transition: #{$time}ms;
+  &:hover {
+    position: relative;
+    cursor: #{$cursor};
+    top: #{$v}px;
+    left: #{$h}px;
+    @if $shadow == filter{
+      filter: drop-shadow(-3px 3px 8px rgba(0, 0, 0, 1));
+    }
+      @else {
+    @extend %hoverShadow}
+  }
 }

@@ -99,7 +99,15 @@ footer {
 .socials {
   display: grid;
   width: 42px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 200ms;
 }
 .socials:hover {
-  filter: drop-shadow(4px 4px 4px rgb(0, 0, 0));
+  position: relative;
+  cursor: pointer;
+  top: -5px;
+  left: 5px;
+  filter: drop-shadow(-3px 3px 8px rgb(0, 0, 0));
 }

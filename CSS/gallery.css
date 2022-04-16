@@ -1,3 +1,7 @@
+.gallery-grid img:hover {
+  box-shadow: -4px 4px 8px #000000;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
@@ -14,15 +18,13 @@
   position: relative;
   top: 0;
   left: 0;
-  transition: 0.2s;
+  transition: 200ms;
 }
 .gallery-grid img:hover {
   position: relative;
   cursor: zoom-in;
-  top: -10px;
-  left: 10px;
-  box-shadow: -4px 4px 8px 0px #000000;
-  transition: 0.2s;
+  top: -5px;
+  left: 5px;
 }
 
 .curtain {

@@ -96,7 +96,5 @@ footer {
 .socials {
   display: grid;
   width: 42px;
-  &:hover {
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
-  }
+  @include hoverMovement(200,pointer,-5,5,filter);
 }
