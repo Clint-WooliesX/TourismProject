@@ -26,13 +26,13 @@ A combination CSS styles have been used to create the responsive layout:
 	- a media query loads the appropriate stylesheet when the page loads for screens of 900px and below and 901px and above.
 
 ```<link rel="stylesheet" href="CSS/baseStyle.css">
-<link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />
-<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />
-```
+```<link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />
+```<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />
 
-		- baseStyle.css contains all the common styling
-		- styles.css contains all unique styling for >901px
-		- styleSmallScreen.css contains all unique styling for <900px
+
+	- baseStyle.css contains all the common styling
+	- styles.css contains all unique styling for >901px
+	- styleSmallScreen.css contains all unique styling for <900px
 1. Javascript
 	- Hides/shows the horizontal navigation menu
 	- Hides/shows the Hamburger navigation menu and controls the opening and closing of the flyout
