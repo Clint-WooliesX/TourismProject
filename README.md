@@ -54,9 +54,9 @@ A combination CSS styles have been used to create the responsive layout:
   - Mixins
   - @if and @else statements
 
-####Examples of mixins I created:
+#### Examples of mixins I created:
 
-hoverMovement() is used for mouse over effects it takes 5 arguments
+`hoverMovement()` is used for mouse over effects it takes 5 arguments
 
 - time in ms animation transition
 - cursor - sets mouse pointer
@@ -86,7 +86,7 @@ hoverMovement() is used for mouse over effects it takes 5 arguments
 Example: hoverMovement(250,pointer,-10,10,filter)
 replaces 13 lines of code
 
-corners() is used for quick setting of corner radiuses where 3 or less corners or different radius sizes per corner are used. t takes 4 arguments
+`corners()` is used for quick setting of corner radiuses where 3 or less corners or different radius sizes per corner are used. t takes 4 arguments
 
 - top left in px
 - top Right in px
@@ -152,7 +152,7 @@ corners() is used for quick setting of corner radiuses where 3 or less corners o
 - Once successfully submitted the user is shown a success page and an option to "Go back".
 - A Javascript event listener detects a "back" page traversal and triggers a refresh of the page to clear the form. (this was a work around required as custom success redirects are not allowed on the free plan).
 
-# What I learnt creating this site.
+# What I learnt creating on this project.
 It was fun putting what I have learnt in to practice to create this website.
 
 One of the most valuable lessons I learned was use of git, github and version control.
