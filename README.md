@@ -27,7 +27,8 @@ A combination CSS styles have been used to create the responsive layout:
 
 ```<link rel="stylesheet" href="CSS/baseStyle.css">
 <link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />
-<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />```
+<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />
+```
 
 		- baseStyle.css contains all the common styling
 		- styles.css contains all unique styling for >901px
