@@ -21,12 +21,12 @@
 .form-container {
   display: flex;
   margin-top: 0;
-  width: 80%;
   max-width: 90%;
 }
 
 .contact-form {
   display: grid;
+  justify-content: flex-start;
   grid-template-columns: min-content;
   gap: 10px;
 }
@@ -81,6 +81,7 @@ textarea {
   font-weight: bold;
   max-height: min-content;
 }
+
 .reset:hover {
   background-color: red;
   color: white;
@@ -110,6 +111,65 @@ textarea {
   border-radius: 15px;
   align-self: center;
   width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .article{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-wrapper {
+  display: flex;
+  justify-content: left;
+  width:100vw;
+}
+  .form-container {
+    margin-top: 0;
+    max-width: 95vw;
+    padding-left:10px;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  label {
+    font-size: 18px;
+     margin-left: 0px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  input {
+    max-width: 95%;
+    border: 1px solid black;
+    box-shadow: $shadow-contact;
+    border-radius: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+    display: grid;
+    height: 32px;
+  }
+
+  textarea {
+    max-width: 95%;
+    box-shadow: $shadow-contact;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: 18px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .spinner-location {
