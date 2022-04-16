@@ -53,7 +53,7 @@
   grid-column: 1 / span 2;
   font-family: $font-headings;
   font-size: 38px;
-  text-shadow: $font-shadow;
+  text-shadow: $shadow-text;
 }
 .nav-items {
   display: flex;
@@ -65,7 +65,7 @@
 .nav-link {
   color: $color-navBar;
   text-decoration: none;
-  text-shadow: $font-shadow;
+  text-shadow: $shadow-text;
   &:hover {
     color: $color-hover;
     text-shadow: 2px 2px 4px $color-selectedGlow;

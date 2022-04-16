@@ -1,15 +1,3 @@
-.article, .panel {
-  box-shadow: inset -6px 6px 6px #000000;
-}
-
-.article, .panel {
-  box-shadow: inset -6px 6px 6px #000000;
-}
-
-.socials:hover {
-  box-shadow: -4px 4px 8px #000000;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +24,7 @@
 .panel {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  box-shadow: inset -6px 6px 6px #000000;
   background-color: #b4b4b4;
   border-radius: 30px;
   padding: 15px;
@@ -57,6 +46,7 @@
   text-align: justify;
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset -6px 6px 6px #000000;
   background-color: #f2f2f2;
 }
 
@@ -113,4 +103,5 @@ footer {
   cursor: pointer;
   top: -5px;
   left: 5px;
+  filter: drop-shadow(-3px 3px 8px rgb(0, 0, 0));
 }

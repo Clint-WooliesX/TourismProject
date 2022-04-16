@@ -13,6 +13,8 @@
   $color-infoPanels:#b4b4b4;
 
   // shadow effects
-  %contentShadow {
-    box-shadow: inset -6px 6px 6px $color-dropShadow;
-  }
+  $shadow-panels: inset -6px 6px 6px $color-dropShadow;
+  $shadow-text: -3px 4px 8px black;
+  $shadow-hover: -4px 4px 8px black;
+
+

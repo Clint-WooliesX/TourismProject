@@ -18,7 +18,7 @@
   left: 0;
   font-family: $font-headings;
   color: $color-header;
-  text-shadow: $font-shadow;
+  text-shadow: $shadow-text;
 }
 
 .side-bar {
@@ -28,7 +28,7 @@
 .panel {
   font-family: $font-article;
   width: 100%;
-  @extend %contentShadow;
+  box-shadow: $shadow-panels;
   background-color: $color-infoPanels;
   border-radius: 30px;
   padding: 15px;
@@ -50,7 +50,7 @@
   text-align: justify;
   padding: 20px;
   font-family: $font-article;
-  @extend %contentShadow;
+  box-shadow: $shadow-panels;
   background-color: $color-article;
 }
 
@@ -88,7 +88,7 @@ footer {
 .tourismInfo {
   font-size: 24px;
   font-family: $font-headings;
-  text-shadow: 3px 3px 8px $font-shadow;
+  text-shadow: 3px 3px 8px $shadow-text;
   display: grid;
   grid-column: 1 / span 4;
 }
@@ -96,5 +96,5 @@ footer {
 .socials {
   display: grid;
   width: 42px;
-  @include hoverMovement(200,pointer,-5,5,box);
+  @include hoverMovement(200, pointer, -5, 5, filter);
 }

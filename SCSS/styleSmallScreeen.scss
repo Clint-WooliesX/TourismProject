@@ -25,7 +25,7 @@
   &--title {
     margin-left: 40px;
     font-size: calc(100vw * 0.09);
-    text-shadow: $font-shadow;
+    text-shadow: $shadow-text;
   }
   &--tag {
     display: none;
@@ -43,7 +43,7 @@
   font-size: 88%;
   font-family: $font-headings;
   color: $color-header;
-  text-shadow: $font-shadow;
+  text-shadow: $shadow-text;
 
   &__hamburger {
     content: "";
