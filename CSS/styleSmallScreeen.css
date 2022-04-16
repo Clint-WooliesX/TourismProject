@@ -20,7 +20,7 @@
 .headings--title {
   margin-left: 40px;
   font-size: 9vw;
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
 }
 .headings--tag {
   display: none;
@@ -37,7 +37,7 @@
   font-size: 88%;
   font-family: "Grape Nuts";
   color: #f2ec94;
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
 }
 .burger-wrapper__hamburger {
   content: "";

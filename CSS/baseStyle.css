@@ -14,7 +14,7 @@
   left: 0;
   font-family: "Grape Nuts";
   color: #f2ec94;
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
 }
 
 .side-bar {
@@ -85,7 +85,7 @@ footer {
 .tourismInfo {
   font-size: 24px;
   font-family: "Grape Nuts";
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
   display: grid;
   grid-column: 1/span 4;
 }

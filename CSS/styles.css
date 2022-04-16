@@ -46,7 +46,7 @@
   grid-column: 1/span 2;
   font-family: "Grape Nuts";
   font-size: 38px;
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
 }
 
 .nav-items {
@@ -59,7 +59,7 @@
 .nav-link {
   color: #f2c063;
   text-decoration: none;
-  text-shadow: -3px 4px 8px black;
+  text-shadow: -4px 4px 8px black;
 }
 .nav-link:hover {
   color: #f2ec94;
