@@ -6,18 +6,18 @@ Create a working tourism website
 
 - A landing page/section with a title and some information on it.
 - A gallery page, that showcases a bunch of images of the location.
-- A getting there page, that contains information available transport options, snippets of maps, etc.
-- a README.md at the root of the repo to include how you went about coding for that project)
+- A getting there page, that contains information, available transport options, snippets of maps, etc.
+- a README.md at the root of the repo to include how you went about coding for that project
 - A Contact page/section with your email, GitHub profile link
 
 ### Development process:
 
-- established the subject matter to be Wisemans ferry.
-- thought about the MVP criteria and how I would implement that into the site.
-- I decided heavy use of grids to layout the site would demonstrate the acquired knowledge
-- I sketched by hand with pen and paper how I wanted the site to look both on desktop and mobile device
-- I began gathering the resources for the site images text snippets etc.
-- structured all the HTML in such away that I could apply the CSS to style the site for both mobile and desktop as well as apply any style sheet to test different layouts and designs.
+- Established the subject matter to be Wisemans ferry
+- Thought about the MVP criteria and how I would implement that into the site
+- Decided use of flex/grid to layout the site would demonstrate the acquired knowledge
+- Sketched by hand with pen and paper how I wanted the site to look both on desktop and mobile device
+- Began gathering the resources for the site images, text snippets etc.
+- Structured all the HTML in such a way that I could apply the CSS to style the site for both mobile and desktop as well as apply any style sheet to test different layouts and designs.
 
 ## Site Features:
 
@@ -30,18 +30,19 @@ A combination of techniques have been used to create the responsive layout:
 1. Media query
    - a media query loads the appropriate stylesheet when the page loads for screens of 900px and below and 901px and above.
 
-```
-<link rel="stylesheet" href="CSS/baseStyle.css">
-<link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />
-<link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />
-```
+    ```
+    <link rel="stylesheet" href="CSS/baseStyle.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 901px)" href="CSS/styleSmallScreeen.css" />
+    ```
 
-- baseStyle.css contains all the common styling
-- styles.css contains all unique styling for >901px
-- styleSmallScreen.css contains all unique styling for <900px
-- Other page specific stylesheets are also combined with base and screen size sheets.
+	- baseStyle.css contains all the common styling
+	- styles.css contains all unique styling for >901px
+	- styleSmallScreen.css contains all unique styling for <900px
+	- Other page specific stylesheets are also combined with base and screen size sheets.
+	- Media queries within the sheets for specialised layouts at low resolutions
 
-1. Javascript
+3. Javascript
    - Hides/shows the horizontal navigation menu
    - Hides/shows the Hamburger navigation menu and controls the opening and closing of the flyout
 
@@ -87,7 +88,7 @@ A combination of techniques have been used to create the responsive layout:
 Example: hoverMovement(250,pointer,-10,10,filter)
 replaces 13 lines of code
 
-`corners()` is used for quick setting of corner radiuses where 3 or less corners or different radius sizes per corner are used. t takes 4 arguments
+`corners()` is used for quick setting of corner radiuses where 3 or less corners or different radius sizes per corner are used. It takes 4 arguments
 
 - top left in px
 - top Right in px
@@ -95,20 +96,20 @@ replaces 13 lines of code
 - bottom right in px
   example: @include corners(20,10,30,5) replaces 4 lines of code
 
-  ```
-  @mixin corners($tl, $tr, $bl, $br) {
-  border-top-left-radius: #{$tl}px;
-  border-top-right-radius: #{$tr}px;
-  border-bottom-left-radius: #{$bl}px;
-  border-bottom-right-radius: #{$br}px;
-  }
-  ```
+```
+@mixin corners($tl, $tr, $bl, $br) {
+border-top-left-radius: #{$tl}px;
+border-top-right-radius: #{$tr}px;
+border-bottom-left-radius: #{$bl}px;
+border-bottom-right-radius: #{$br}px;
+}
+```
 
-  ### Use of Java script:
+### Use of Java script:
   Some light Javascript use has been used to extend functionality of the site. I have used:
 - Event listeners:
   - Window resize
-  - form submission
+  - Form submission
   - History traversal
 - Functions to modify page elements:
   - Hide, show and resize page elements
@@ -118,18 +119,18 @@ replaces 13 lines of code
 
 ### Theme and design:
 
-- A color pellet was devised by uploading the hero image at top of page into https://color.adobe.com/create/color-wheel.
-- the pallet is stored in variables with logical names to allow for quick changing the theme rapidly without having to edit the entire style sheets, only the variable stored in \_pallet.scss.
+- A color palette was devised by uploading the hero image at top of page into https://color.adobe.com/create/color-wheel.
+- The palette is stored in variables with logical names to allow for quick changing the theme rapidly without having to edit the entire style sheets, only the variable stored in _palette.scss.
 - The layout design was devised to best demonstrate my acquired knowledge of the block/flex and grid layout systems to create a responsive layout with minimal code.
 - As the page is resized all content on the page logically shifts around to make best use of the screen space.
-- when the page gets below 900px where the horizontal nav bar becomes crowded the following happens.
+- When the page gets below 900px where the horizontal nav bar becomes crowded the following happens.
   - Horizontal nav bar is hidden.
-  - the right side bar is moved to below the content and changes to a side-by-side layout instead of above and below.
+  - The right side bar is moved to below the content and changes to a side-by-side layout instead of above and below.
   - The body Margins are set to 0px and the rounded borders turned off.
-  - the Article panel is switched to 100% screen width.
-  - a Hamburger bar replaces the nav bar.
+  - The Article panel is switched to 100% screen width.
+  - A Hamburger bar replaces the nav bar.
   - A flyout dropdown contains the page headings.
-  - as the nav bar is now hidden page titles are turned on in the article panel to denote the pages subject.
+  - As the nav bar is now hidden page titles are turned on in the article panel to denote the pages subject.
   - Many other visual tweaks to make best use of screen space.
   - only 2 media queries are needed due to use of block, flex, grid and css.
   - Site tested on 5k monitor, 15" and 11" laptops, 10"tablet and 6"mobile.
@@ -151,12 +152,12 @@ replaces 13 lines of code
 - Hosted server processes the input and emails the submission.
 - HTML/CSS animation tells the user the submission is being handled if the server is slow to respond.
 - Once successfully submitted the user is shown a success page and an option to "Go back".
-- A Javascript event listener detects a "back" page traversal and triggers a refresh of the page to clear the form. (this was a work around required as custom success redirects are not allowed on the free plan).
+- A Javascript event listener detects a "back" page traversal and triggers a refresh of the page to clear the form (this was a work around required as custom success redirects are not allowed on the free plan).
 
 # What I learnt creating on this project.
 It was fun putting what I have learnt in to practice to create this website.
 
-One of the most valuable lessons I learned was use of git, github and version control.
+One of the most valuable lessons I learnt was use of git, github and version control.
 
 Early on I made several commits without branching first and later realized I had broken my responsive layout and had no idea at what point it had happened.
 

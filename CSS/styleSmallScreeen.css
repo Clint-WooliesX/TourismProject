@@ -1,133 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "palette";
+ *   |         ^^^^^^^^^
+ *   '
+ *   SCSS/styleSmallScreeen.scss 1:9  root stylesheet */
 
-.body {
-  background-color: #73482f;
-}
-
-.header {
-  display: grid;
-  position: relative;
-  width: 100%;
-}
-.header__hero-img {
-  border-bottom: 1px solid black;
-  width: 100%;
-}
-
-.headings--title {
-  margin-left: 40px;
-  font-size: 9vw;
-  text-shadow: -4px 4px 8px black;
-}
-.headings--tag {
-  display: none;
-}
-
-.burger-wrapper {
-  cursor: pointer;
-  display: grid;
-  position: relative;
-  justify-content: center;
-  align-content: center;
-  height: 40px;
-  width: 100%;
-  font-size: 88%;
-  font-family: "Grape Nuts";
-  color: #f2ec94;
-  text-shadow: -4px 4px 8px black;
-}
-.burger-wrapper__hamburger {
-  content: "";
-  position: absolute;
-  left: 15px;
-  width: 22px;
-  height: 0;
-  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
-}
-
-.ham-menu {
-  display: grid;
-  text-align: center;
-  align-content: space-between;
-  overflow: hidden;
-  height: 0px;
-  width: 100%;
-  transition: all 0.25s;
-}
-
-.ham-items {
-  display: grid;
-  justify-content: space-around;
-  list-style: none;
-  font-family: "Grape Nuts";
-}
-
-.ham-link {
-  font-size: 48px;
-  text-decoration: none;
-  color: #f2c063;
-}
-.ham-link:hover {
-  text-shadow: 2px 2px 4px #ffde04;
-  color: #f2ec94;
-}
-.ham-link--this-page {
-  font-size: 48px;
-  text-shadow: 2px 2px 4px #ffde04;
-  color: #f2ec94;
-}
-
-.side-bar {
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-  width: 100vw;
-  font-size: 95%;
-  margin: auto;
-}
-
-.panel {
-  align-self: center;
-  width: 60vw;
-  margin-top: 15px;
-}
-
-.article {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.paragraph {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.caption-text {
-  display: none;
-}
-
-.small-centered {
-  display: flex;
-  justify-content: center;
-}
-.small-centered__image {
-  cursor: zoom-in;
-  border-radius: 20px;
-  border: 3px solid #73482f;
-  max-width: 100%;
-}
-
-.small-map {
-  display: flex;
-  border-radius: 20px;
-  border: 3px solid #73482f;
-  max-width: 400px;
-  max-height: 400px;
-  width: 80vw;
-  height: 80vw;
-  margin-bottom: 10px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"palette\";\a   \2502          ^^^^^^^^^\a   \2575 \a   SCSS/styleSmallScreeen.scss 1:9  root stylesheet";
 }
