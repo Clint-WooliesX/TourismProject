@@ -1,17 +1,107 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "palette";
- *   |         ^^^^^^^^^
- *   '
- *   SCSS/baseStyle.scss 1:9  root stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"palette\";\a   \2502          ^^^^^^^^^\a   \2575 \a   SCSS/baseStyle.scss 1:9  root stylesheet";
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.headings {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+  text-shadow: -4px 4px 8px black;
+}
+
+.side-bar {
+  background: Arial, Helvetica, sans-serif;
+}
+
+.panel {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  box-shadow: inset -6px 6px 6px #000000;
+  background-color: #b4b4b4;
+  border-radius: 30px;
+  padding: 15px;
+  overflow: hidden;
+}
+.panel--horizontal-line {
+  color: #9fa3a6;
+  margin: 10px;
+}
+.panel--justified-text {
+  text-align: left;
+}
+.panel--center-text {
+  text-align: center;
+}
+
+.article {
+  display: grid;
+  text-align: justify;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset -6px 6px 6px #000000;
+  background-color: #f2f2f2;
+}
+
+h3 {
+  text-align: center;
+}
+
+.paragraph {
+  max-width: 600px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  grid-column: span 2;
+  align-items: center;
+  text-align: center;
+  color: #f2c063;
+  background-color: #73482f;
+  height: 150px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 10px;
+  column-gap: 15px;
+}
+
+.tourismInfo {
+  font-size: 24px;
+  font-family: "Grape Nuts";
+  text-shadow: -4px 4px 8px black;
+  display: grid;
+  grid-column: 1/span 4;
+}
+
+.socials {
+  display: grid;
+  width: 42px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 200ms;
+}
+.socials:hover {
+  position: relative;
+  cursor: pointer;
+  top: -5px;
+  left: 5px;
+  filter: drop-shadow(-3px 3px 8px rgb(0, 0, 0));
 }
