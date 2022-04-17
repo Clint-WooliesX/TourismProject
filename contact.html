@@ -87,12 +87,12 @@
               We will endeavour to respond within 48hrs.
             </p>
             <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Full name" />
+            <label for="name" >Name:</label>
+            <input type="text" name="name" id="name" placeholder="Full name" MaxLength="40" />
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="example@domain.com" required />
             <label for="phone">Phone:</label>
-            <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678" />
+            <input type="tel" name="phone" id="phone" placeholder="0412 345 678" required pattern="^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{1}( |-){0,1}[0-9]{3}$" title="example:&#013;0404123456&#013;0404 123 456&#013;+61404123456&#013;(02) 9123 4567 " />
             <label class="message" for="message">Message:</label>
             <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
             <div class="buttons">
