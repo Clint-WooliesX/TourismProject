@@ -10,15 +10,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet" />
   <!-- google font -->
-  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/output-SCSS/styles.css" />
-  <link rel="stylesheet" media="screen and (max-width: 900px)" href="/output-SCSS/styleSmallScreeen.css" />
-  <link rel="stylesheet" href="/styles/contact.css">
+  <link rel="stylesheet" href="/CSS/baseStyle.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="/CSS/styles.css" />
+  <link rel="stylesheet" media="screen and (max-width: 901px)" href="/CSS/styleSmallScreeen.css" />
+  <link rel="stylesheet" href="/CSS/contact.css">
   <script src="/javascript/gallery.js"></script>
+  <script src="/javascript/contact.js" defer></script>
   <script src="/javascript/index.js"></script>
   <title>Visit Wisemans Ferry</title>
 </head>
 
+
+      <div id="curtain" class="curtain" onclick="closeImage()" style="display: none">
+        
+      </div>
+
+
 <body class="body">
+  <div id="spinnerLocation" class="spinner-location">
+    <div class="lds-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <div id="zoomImg" class="zoom-img" onclick="closeImage()" style="display: none">
     <div class="gallery-box">
@@ -32,7 +56,7 @@
   <main class="main">
     <header class="header">
       <img class="header__hero-img" src="/images/banner.jpg" alt="" />
-    
+
       <heading class="headings">
         <h1 class="headings--title">Wisemans Ferry</h1>
         <h2 class="headings--tag ">"Come visit the Hawkesbury"</h2>
@@ -40,48 +64,50 @@
     </header>
 
     <nav class="burger-wrapper" onclick="openNav()">
-      <h2>Come visit the Hawkesbury</h2>
+      <h2>"Come visit the Hawkesbury"</h2>
       <div class="burger-wrapper__hamburger"></div>
     </nav>
 
     <nav id="navigation-bar" class="nav-menu ham-menu ">
       <ul class="nav-items ham-items">
-        <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Overview</a></li>
+        <li><a class="nav-link nav-link:hover ham-link" href="/index.html">Overview</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/getting_here.html">Getting here</a></li>
         <li><a class="nav-link nav-link:hover ham-link" href="/gallery.html">Gallery</a></li>
-        <li><a class="nav-link--this-page ham-link ham-link--thipage">Contact</a></li>
+        <li><a class="nav-link--this-page ham-link--this-page">Contact</a></li>
       </ul>
     </nav>
 
     <article class="article ">
-      <h3>Contact</h3>
+      <h3 class="page-title">Contact</h3>
       <div class="form-wrapper">
-      <div class="form-container">
-        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
-          <p style="text-align:justify; grid-column: 1/ span 3;">
-            Please complete the form below if you would like to make an enquiry.
-            We will endeavour to respond within 48hrs.
-          </p>
-          <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Full name" />
-          <!-- <div class="log-caption">
-          <p class="log-caption" >Powered by</p>
-          <img class="logo" src="/images/formsLogo.png" alt="">
-          </div> -->
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="example@domain.com" required />
-          <label for="phone">Phone:</label>
-          <input type="tel" name="phone" id="phone" placeholder="+61 0412 345 678" />
-          <label class="message" for="message">Message:</label>
-          <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
-          <div class="buttons">
-            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-            <button type="reset" value="Reset" class="reset">Reset</button>
-            <button type="submit" value="Submit" class="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+        <div class="form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+            <p style="text-align:center; grid-column: 1/ span 3;">
+              Please complete the form below if you would like to make an enquiry.
+              We will endeavour to respond within 48hrs.
+            </p>
+            <input type="hidden" name="access_key" value="6f6472ec-be14-40eb-93ba-6582b32ba18f" />
+            <label for="name" >Name:</label>
+            <input type="text" name="name" id="name" placeholder="Full name" MaxLength="40" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@domain.com" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="0412 345 678" required pattern="^\({0,1}((0|\+61)(2|4|3|7|8)){0,1}\){0,1}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{2}( |-){0,1}[0-9]{1}( |-){0,1}[0-9]{3}$" title="example:&#013;0404123456&#013;0404 123 456&#013;+61404123456&#013;(02) 9123 4567 " />
+            <label class="message" for="message">Message:</label>
+            <textarea name="message" id="messae" cols="30" rows="10" placeholder="Your message here"></textarea>
+            <div class="buttons">
+
+              <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+              <button type="reset" value="Reset" class="reset">Reset</button>
+              <button type="submit" value="Submit" class="submit">Submit</button>
+
+            </div>
+            <div class="log-caption">
+              <p class="log-caption">Powered by</p>
+              <img class="logo" src="/images/formsLogo.png" height="50%" height="50%" alt="">
+            </div>
+          </form>
+        </div>
     </article>
 
 

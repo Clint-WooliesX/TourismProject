@@ -10,8 +10,6 @@ console.log("image alt text = ",caption);
 document.getElementById("galleryCaption").innerHTML=caption;
 }
 
-
-
 function closeImage(){
     document.getElementById("curtain").style.display = "none"
 }

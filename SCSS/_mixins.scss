@@ -1,0 +1,28 @@
+@import "palette";
+@import "fonts";
+
+// mixins
+@mixin corners($tl, $tr, $bl, $br) {
+  border-top-left-radius: #{$tl}px;
+  border-top-right-radius: #{$tr}px;
+  border-bottom-left-radius: #{$bl}px;
+  border-bottom-right-radius: #{$br}px;
+}
+
+@mixin hoverMovement($time, $cursor, $v, $h, $shadow) {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: #{$time}ms;
+  &:hover {
+    position: relative;
+    cursor: #{$cursor};
+    top: #{$v}px;
+    left: #{$h}px;
+    @if $shadow == filter {
+      filter: $filter-shadow
+    } @else {
+      box-shadow: $shadow-hover;
+    }
+  }
+}

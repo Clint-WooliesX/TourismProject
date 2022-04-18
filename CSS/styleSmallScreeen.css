@@ -1,35 +1,29 @@
-@import "palette";
-@import "fonts";
-@import "mixins";
-
 * {
   margin: 0;
   padding: 0;
 }
 
 .body {
-  background-color: $color-background;
+  background-color: #73482f;
 }
 
 .header {
   display: grid;
   position: relative;
   width: 100%;
-  &__hero-img {
-    border-bottom: 1px solid black;
-    width: 100%;
-  }
+}
+.header__hero-img {
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
-.headings {
-  &--title {
-    margin-left: 40px;
-    font-size: calc(100vw * 0.09);
-    text-shadow: $shadow-text;
-  }
-  &--tag {
-    display: none;
-  }
+.headings--title {
+  margin-left: 40px;
+  font-size: 9vw;
+  text-shadow: -4px 4px 8px black;
+}
+.headings--tag {
+  display: none;
 }
 
 .burger-wrapper {
@@ -41,20 +35,19 @@
   height: 40px;
   width: 100%;
   font-size: 88%;
-  font-family: $font-headings;
-  color: $color-header;
-  text-shadow: $shadow-text;
-
-  &__hamburger {
-    content: "";
-    position: absolute;
-    left: 15px;
-    width: 22px;
-    height: 0;
-    box-shadow: 0 12px 0 1px $color-navBar, 0 20px 0 1px $color-navBar,
-      0 28px 0 1px $color-navBar;
-  }
+  font-family: "Grape Nuts";
+  color: #f2ec94;
+  text-shadow: -4px 4px 8px black;
 }
+.burger-wrapper__hamburger {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 22px;
+  height: 0;
+  box-shadow: 0 12px 0 1px #f2c063, 0 20px 0 1px #f2c063, 0 28px 0 1px #f2c063;
+}
+
 .ham-menu {
   display: grid;
   text-align: center;
@@ -64,25 +57,27 @@
   width: 100%;
   transition: all 0.25s;
 }
+
 .ham-items {
   display: grid;
   justify-content: space-around;
   list-style: none;
-  font-family: $font-headings;
+  font-family: "Grape Nuts";
 }
+
 .ham-link {
   font-size: 48px;
   text-decoration: none;
-  color: $color-navBar;
-  &:hover {
-    text-shadow: 2px 2px 4px $color-selectedGlow;
-    color: $color-hover;
-  }
-  &--this-page {
-    font-size: 48px;
-    text-shadow: 2px 2px 4px $color-selectedGlow;
-    color: $color-hover;
-  }
+  color: #f2c063;
+}
+.ham-link:hover {
+  text-shadow: 2px 2px 4px #ffde04;
+  color: #f2ec94;
+}
+.ham-link--this-page {
+  font-size: 48px;
+  text-shadow: 2px 2px 4px #ffde04;
+  color: #f2ec94;
 }
 
 .side-bar {
@@ -101,7 +96,7 @@
 }
 
 .article {
-  font-family: $font-article;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .paragraph {
@@ -114,21 +109,22 @@
 .caption-text {
   display: none;
 }
+
 .small-centered {
   display: flex;
   justify-content: center;
-  &__image {
-    cursor: zoom-in;
-    border-radius: 20px;
-    border: 3px solid $color-background;
-    max-width: 100%;
-  }
+}
+.small-centered__image {
+  cursor: zoom-in;
+  border-radius: 20px;
+  border: 3px solid #73482f;
+  max-width: 100%;
 }
 
 .small-map {
   display: flex;
   border-radius: 20px;
-  border: 3px solid $color-background;
+  border: 3px solid #73482f;
   max-width: 400px;
   max-height: 400px;
   width: 80vw;

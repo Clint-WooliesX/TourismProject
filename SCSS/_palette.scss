@@ -1,0 +1,20 @@
+$color-header: #f2ec94;
+$color-subHeader: #f2c063;
+$color-navBar: #f2c063;
+$color-background: #73482f;
+$color-dropShadow: #000000;
+$color-textShadow: #000000d0;
+$color-FullScreenTint: #000000d0;
+$color-bodyMargin: #516673;
+$color-article: #f2f2f2;
+$color-hover: #f2ec94;
+$color-selectedGlow: #ffde04;
+$color-smallCaptions: #3a3a3a;
+$color-infoPanels: #b4b4b4;
+
+// shadow effects
+$shadow-panels: inset -6px 6px 6px $color-dropShadow;
+$shadow-text: -4px 4px 8px black;
+$shadow-hover: -4px 4px 8px black;
+$shadow-contact: inset -2px 2px 8px black;
+$filter-shadow: drop-shadow(-3px 3px 8px rgba(0, 0, 0, 1));

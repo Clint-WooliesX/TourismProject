@@ -1,0 +1,130 @@
+.body {
+  background: rgb(177, 186, 192);
+  background: linear-gradient(180deg, rgb(177, 186, 192) 0%, rgb(81, 102, 115) 44%);
+}
+
+.main {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: auto 250px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 30px;
+  background-color: #73482f;
+}
+
+.header {
+  position: relative;
+  grid-column: 1/span 2;
+}
+.header__hero-img {
+  border-bottom: 1px solid black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 100%;
+}
+
+.headings--title {
+  margin-left: 40px;
+  font-size: 5vw;
+}
+.headings--tag {
+  margin-left: 80px;
+  font-size: 2vw;
+  margin-bottom: 15px;
+}
+
+.burger-wrapper {
+  display: none;
+  font-family: "Grape Nuts";
+  color: #f2c063;
+}
+
+.nav-menu {
+  display: grid;
+  grid-column: 1/span 2;
+  font-family: "Grape Nuts";
+  font-size: 38px;
+  text-shadow: -4px 4px 8px black;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: #f2c063;
+}
+
+.nav-link {
+  color: #f2c063;
+  text-decoration: none;
+  text-shadow: -4px 4px 8px black;
+}
+.nav-link:hover {
+  color: #f2ec94;
+  text-shadow: 2px 2px 4px #ffde04;
+}
+.nav-link--this-page {
+  cursor: default;
+  color: #f2ec94;
+  text-shadow: 2px 2px 4px #ffde04;
+}
+
+.side-bar {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  grid-template-columns: auto;
+  row-gap: 30px;
+  width: 180px;
+  margin: 0 20px 0 20px;
+  font-size: 95%;
+}
+
+.article {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-title {
+  display: none;
+}
+
+.paragraph {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.float-right {
+  margin: 5px 50px 0 15px;
+  float: right;
+}
+.float-right__image {
+  cursor: zoom-in;
+  border-radius: 20px;
+  border: 3px solid #73482f;
+  max-width: 100%;
+  width: 250px;
+}
+.float-right__image--map {
+  border-radius: 20px;
+  border: 3px solid #73482f;
+  max-width: 400px;
+  max-height: 400px;
+  width: 30vw;
+  height: 30vw;
+}
+
+.caption-text {
+  text-align: center;
+  padding-bottom: 15px;
+  display: block;
+  color: #3a3a3a;
+  font-size: 14px;
+  text-align: center;
+  height: 10px;
+}

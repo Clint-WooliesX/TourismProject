@@ -1,0 +1,100 @@
+@import "palette";
+@import "fonts";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.headings {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: $font-headings;
+  color: $color-header;
+  text-shadow: $shadow-text;
+}
+
+.side-bar {
+  background: $font-article;
+}
+
+.panel {
+  font-family: $font-article;
+  width: 100%;
+  box-shadow: $shadow-panels;
+  background-color: $color-infoPanels;
+  border-radius: 30px;
+  padding: 15px;
+  overflow: hidden;
+  &--horizontal-line {
+    color: #9fa3a6;
+    margin: 10px;
+  }
+  &--justified-text {
+    text-align: left;
+  }
+  &--center-text {
+    text-align: center;
+  }
+}
+
+.article {
+  display: grid;
+  text-align: justify;
+  padding: 20px;
+  font-family: $font-article;
+  box-shadow: $shadow-panels;
+  background-color: $color-article;
+}
+
+h3 {
+  text-align: center;
+}
+
+.paragraph {
+  max-width: 600px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+// ------------ footer ---------------
+
+footer {
+  display: grid;
+  justify-content: center;
+  grid-column: span 2;
+  align-items: center;
+  text-align: center;
+  color: $color-navBar;
+  background-color: $color-background;
+  height: 150px;
+  @include corners(0, 0, 30, 30);
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 10px;
+  column-gap: 15px;
+}
+
+.tourismInfo {
+  font-size: 24px;
+  font-family: $font-headings;
+  text-shadow: $shadow-text;
+  display: grid;
+  grid-column: 1 / span 4;
+}
+
+.socials {
+  display: grid;
+  width: 42px;
+  @include hoverMovement(200, pointer, -5, 5, filter);
+}
